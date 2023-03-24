@@ -1,0 +1,11 @@
+.RoundButton{
+    padding: 0.5rem 2rem;
+    background: linear-gradient(to right,var(--color-accent-primary),var(--color-accent-secondary));
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    text-decoration: none;
+    color: var(--color-background);
+}
