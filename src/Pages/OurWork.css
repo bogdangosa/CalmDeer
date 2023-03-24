@@ -1,5 +1,6 @@
 .OurWork{
     padding: 2rem 5rem;
+    width: 1440px;
 }
 
 .ourwork_title{
@@ -72,4 +73,44 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     width: 90%;
+}
+
+@media screen and (max-width: 1440px) {
+    .OurWork{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .work_table{
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .category_menu{
+        display: none;
+    }
+    .ourwork_title{
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .OurWork{
+        padding: 2rem;
+    }
+    .work_table{
+        grid-template-columns: 1fr;
+    }
+    .our_work_subtitle{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    .ourwork_title{
+        font-size: 2.5rem;
+        width: 100%;
+        text-align: center;
+    }
 }

@@ -48,6 +48,7 @@
     -moz-transition: scale 300ms;
     -ms-transition: scale 300ms;
     -o-transition: scale 300ms;
+    object-fit: cover;
 }
 
 .CategoryCard:hover .category_card_image{
