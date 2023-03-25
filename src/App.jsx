@@ -1,5 +1,6 @@
 import { createBrowserRouter, createRoutesFromElements,RouterProvider , Route} from 'react-router-dom'
 import './App.css'
+import Contact from './Pages/Contact'
 import Home from './Pages/Home'
 import News from './Pages/News'
 import OurWork from './Pages/OurWork'
@@ -11,7 +12,7 @@ const router = createBrowserRouter(
       <Route index element={<Home/>}/>
       <Route path='/OurWork' element={<OurWork/>}/>
       <Route path='/News' element={<News/>}/>
-      
+      <Route path='/Contact' element={<Contact/>}/>
     </Route>
   )
 )

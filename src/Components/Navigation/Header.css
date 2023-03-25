@@ -41,7 +41,6 @@
     justify-content: center;
     gap: 3rem;
     list-style-type: none;
-    padding-right: 2rem;
     height: 100%;
 }
 
@@ -120,6 +119,10 @@
 
 
 @media screen and (max-width: 700px) {
+    .HomeHeader .nav-links p{
+        color: var(--color-text-primary);
+    }
+
     .nav-bar{
         flex-direction: column;
         position: absolute;
