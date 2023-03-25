@@ -12,7 +12,13 @@
   --color-text-primary: #333;
   --color-text-secondary: #808080;
 
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+p::selection, h1::selection, span::selection , h3::selection{
+  background-color: var(--color-accent-primary);
+  color: var(--color-background);
 }
 
 .accent{
@@ -32,3 +38,24 @@
   align-items: center;
 }
 
+
+/* SCROLLBAR */
+
+body::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color-background);
+  border-radius: 1rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--color-text-primary);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-primary);
+}

@@ -4,7 +4,7 @@
     overflow: hidden;
     position: relative;
     border-radius: 1rem;
-    -webkit-border-radius: 1rem;
+    -webkit-border-radius: 0.2rem;
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
