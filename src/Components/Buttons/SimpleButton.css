@@ -1,0 +1,101 @@
+.SimpleButton{
+    width: 100%;
+    height: 100%;
+    max-width: 220px;
+    background: var(--color-accent-primary);
+    text-decoration: none;
+    color: var(--color-background);
+    position: relative;
+    transform: translate3d(0px, 0%, 0px);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: .05em;
+    transition-delay: .6s;
+    overflow: hidden;
+    -webkit-transform: translate3d(0px, 0%, 0px);
+    -moz-transform: translate3d(0px, 0%, 0px);
+    -ms-transform: translate3d(0px, 0%, 0px);
+    -o-transform: translate3d(0px, 0%, 0px);
+    cursor: pointer;
+}
+.SimpleButton:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-background);
+    border-radius: 50% 50% 0 0;
+    transform: translateY(100%) scaleY(.5);
+    -webkit-transform: translateY(100%) scaleY(.5);
+    -moz-transform: translateY(100%) scaleY(.5);
+    -ms-transform: translateY(100%) scaleY(.5);
+    -o-transform: translateY(100%) scaleY(.5);
+}
+.SimpleButton:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-accent-primary);;
+    border-radius: 0;
+    transform: translateY(0) scaleY(1);
+    transition: all 0.6s ease;
+    -webkit-transform: translateY(0) scaleY(1);
+    -moz-transform: translateY(0) scaleY(1);
+    -ms-transform: translateY(0) scaleY(1);
+    -o-transform: translateY(0) scaleY(1);
+}
+.SimpleButton div {
+    position: relative;
+    top: 13.5px;
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.SimpleButton span {
+position: absolute;
+z-index: 1;
+top: 0;
+width: 100%;
+text-align: center;
+transition: transform 0.5s ease;
+}
+.SimpleButton span:first-child { 
+    color: var(--color-text-primary); 
+    transform: translateY(48px); 
+    -webkit-transform: translateY(48px); 
+    -moz-transform: translateY(48px); 
+    -ms-transform: translateY(48px); 
+    -o-transform: translateY(48px);
+}
+.SimpleButton span:last-child {
+color: var(--color-background);
+transform: translateY(0);
+}
+.SimpleButton:hover {
+background: var(--color-background);
+transition: background 0.2s linear;
+transition-delay: 0.6s;
+}
+.SimpleButton:hover:after {
+border-radius: 0 0 50% 50%;
+transform: translateY(-100%) scaleY(0.5);
+transition-delay: 0;
+}
+.SimpleButton:hover:before {
+border-radius: 0;
+transform: translateY(0) scaleY(1);
+transition-delay: 0;
+}
+.SimpleButton:hover span:first-child {
+transform: translateY(0);
+}
+.SimpleButton:hover span:last-child { transform: translateY(-48px); -webkit-transform: translateY(-48px); -moz-transform: translateY(-48px); -ms-transform: translateY(-48px); -o-transform: translateY(-48px);
+}
+  

@@ -42,12 +42,15 @@
     line-height: 4.5rem;
     width: 50%;
     margin-bottom: 2rem;
+    position: relative;
+    z-index: -1;
 }
 
 .hero-text-container{
     position: relative;
     padding: 2.5rem 2.5rem 2.5rem 0;
     width: 60%;
+    z-index: 1;
 }
 .hero-background{
     position: absolute;

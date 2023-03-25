@@ -16,6 +16,11 @@
 
 }
 
+body{
+  width: 100vw;
+  overflow: hidden;
+}
+
 p::selection, h1::selection, span::selection , h3::selection{
   background-color: var(--color-accent-primary);
   color: var(--color-background);
