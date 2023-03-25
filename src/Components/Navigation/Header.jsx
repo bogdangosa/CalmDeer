@@ -2,13 +2,14 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import RoundButton from '../Buttons/RoundButton';
 import './Header.css';
+import { useLocation } from 'react-router-dom';
 
 function Header() {
   const [HamburgerState,setHamburgerState] = useState(false);
-
+  let location = useLocation();
 
   return (
-    <header className="Header">
+    <header className={location.pathname=='/'?"Header HomeHeader":"Header"}>
         <div className='header-container'>
             <p className='logo'>CalmDeer</p>
             <ul className={HamburgerState?'nav-bar':'nav-bar nav-bar-hidden'}>
