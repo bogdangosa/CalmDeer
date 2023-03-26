@@ -43,7 +43,7 @@
     background-color: var(--color-accent-primary);
 }*/
 
-
+/*
 .category_btn::before{
     content: '';
     position: absolute;
@@ -56,16 +56,16 @@
     transform-origin: 100% 0;
     transform: scale3d(0, 1, 1);
     transition: transform 300ms;
-}
+}*/
 
 .category_btn:hover{
-    color: var(--color-background);
+    color: var(--color-accent-primary);
 }
-
+/*
 .category_btn:hover::before{
     transform-origin: 0 0;
     transform: scale3d(1, 1, 1);
-}
+}*/
 
 
 .work_table{

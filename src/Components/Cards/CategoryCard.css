@@ -28,11 +28,11 @@
 }
 
 .CategoryCard:hover .category_card_title{
-    transform: translateY(-1rem);
-    -webkit-transform: translateY(-1rem);
-    -moz-transform: translateY(-1rem);
-    -ms-transform: translateY(-1rem);
-    -o-transform: translateY(-1rem);
+    transform: translateY(-0.5rem);
+    -webkit-transform: translateY(-0.5rem);
+    -moz-transform: translateY(-0.5rem);
+    -ms-transform: translateY(-0.5rem);
+    -o-transform: translateY(-0.5rem);
 }
 
 
@@ -52,5 +52,5 @@
 }
 
 .CategoryCard:hover .category_card_image{
-    scale: 120%;
+    scale: 105%;
 }
