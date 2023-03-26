@@ -204,4 +204,9 @@
         padding: 0 2rem;
     }
 
+    .nav-contact-btn{
+        font-size: 2rem;
+        padding: 0.7rem 3rem;
+    }
+
 }

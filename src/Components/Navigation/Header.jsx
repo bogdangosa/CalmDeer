@@ -16,7 +16,7 @@ function Header() {
                 <NavLink to='/' className={({ isActive }) => isActive ? "nav-links-active nav-links" : "nav-links"} onClick={()=>setHamburgerState(false)}><p data-text="Home">Home</p></NavLink>
                 <NavLink to='/OurWork' className={({ isActive }) => isActive ? "nav-links-active nav-links" : "nav-links"} onClick={()=>setHamburgerState(false)}><p data-text="Our Work">Our Work</p></NavLink>
                 <NavLink to='/News' className={({ isActive }) => isActive ? "nav-links-active nav-links" : "nav-links"} onClick={()=>setHamburgerState(false)}><p data-text="News">News</p></NavLink>
-                <NavLink to='/Contact' className='nav-contact-link' onClick={()=>setHamburgerState(false)}><RoundButton>Contact</RoundButton></NavLink>
+                <NavLink to='/Contact' className='nav-contact-link' onClick={()=>setHamburgerState(false)}><RoundButton className="nav-contact-btn">Contact</RoundButton></NavLink>
             </ul>
 
             <div className={HamburgerState?'hamburger-menu  hamburger-menu-opened':'hamburger-menu'} onClick={()=>setHamburgerState(!HamburgerState)}>
