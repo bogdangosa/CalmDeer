@@ -86,7 +86,7 @@
     font-size: 1.1rem;
     position: relative;
     color: var(--color-background);
-    margin-bottom: 1.5rem;
+    padding-bottom: 4.5rem;
     width: 83.33%;
 }
 
@@ -98,4 +98,16 @@
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
+}
+
+.hero-cta-btn-2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.hero-cta-btn{
+    position: absolute;
+    bottom: 0;
+    right: 260px;
 }

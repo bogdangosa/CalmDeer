@@ -2,6 +2,7 @@ import RoundButton from '../Components/Buttons/RoundButton';
 import SimpleButton from '../Components/Buttons/SimpleButton';
 import './Home.css';
 import {motion} from 'framer-motion'
+import SimpleButton2 from '../Components/Buttons/SimpleButton2';
 
 function Home() {
 
@@ -82,8 +83,8 @@ function Home() {
             <p className='hero-text'>Fusce mattis finibus urna, eu dictum enim porttitor sed. Donec egestas eget quam eu ullamcorper. Praesent turpis libero, vestibulum ut faucibus nec, finibus sed quam. Fusce rutrum velit augue, eget placerat purus maximus eu.</p>
             
             <div className='hero-cta-buttons-container'>
-              <SimpleButton>Our Work</SimpleButton>
-              <SimpleButton>Get in Touch</SimpleButton>
+              <SimpleButton className="hero-cta-btn">Our Work</SimpleButton>
+              <SimpleButton2 className="hero-cta-btn-2">Get in Touch</SimpleButton2>
             </div>
 
             <motion.div className='hero-background' initial="out"animate="in"exit="out"

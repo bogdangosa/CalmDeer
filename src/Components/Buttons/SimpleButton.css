@@ -1,6 +1,6 @@
 .SimpleButton{
     width: 100%;
-    height: 100%;
+    height: 50px;
     max-width: 220px;
     background: var(--color-accent-primary);
     text-decoration: none;

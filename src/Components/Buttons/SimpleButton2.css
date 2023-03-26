@@ -1,0 +1,27 @@
+.SimpleButton2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 220px;
+    font-size: 18px;
+    height: 50px;
+    background: var(--color-accent-primary);
+    text-decoration: none;
+    color: var(--color-background);
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.SimpleButton2 p{
+    color: var(--color-background);
+}
+
+.SimpleButton2:hover{
+    max-width: 226px;
+    height: 53px;
+}
