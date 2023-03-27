@@ -1,5 +1,5 @@
 .Home{
-    padding: 7rem 5rem 0 5rem;
+    padding: 0 5rem;
     width: 1440px;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .hero-section{
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -51,6 +51,7 @@
     padding: 2.5rem 2.5rem 2.5rem 0;
     width: 60%;
     z-index: 1;
+    margin-bottom: 5rem;
 }
 .hero-background{
     position: absolute;

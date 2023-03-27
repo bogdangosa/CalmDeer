@@ -30,6 +30,11 @@ p::selection, h1::selection, span::selection , h3::selection{
   color: var(--color-accent-primary);
 }
 
+
+.bold{
+  font-weight: 500;
+}
+
 .text{
   color:var(--color-text-secondary);
   font-size: 1.1rem;
