@@ -58,4 +58,7 @@
         padding: 1rem;
         padding-bottom: 2.5rem;
     }
+    .news_card_title{
+        font-size: 1.7rem;
+    }
 }

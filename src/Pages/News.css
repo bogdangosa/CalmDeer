@@ -29,5 +29,8 @@
     .News{
         padding: 7rem 2rem 2rem 2rem;
     }
+    .news-title{
+        font-size: 3rem;
+    }
 
 }
