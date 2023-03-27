@@ -8,6 +8,7 @@
     background: var(--color-background);
     position: relative;
     cursor: pointer;
+    overflow: hidden;
 }
 .news_card_image{
     width: 20%;
@@ -39,4 +40,22 @@
 
 .news_card_description{
     color: var(--color-text-secondary);
+}
+
+
+@media screen and (max-width: 600px) {
+    .NewsCard {
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+    }
+    .news_card_image{
+        height: 50%;
+        width: 100%;
+    }
+    
+    .news_card_text{
+        padding: 1rem;
+        padding-bottom: 2.5rem;
+    }
 }

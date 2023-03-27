@@ -24,3 +24,10 @@
     gap:2rem;
     padding-bottom: 2rem;
 }
+
+@media screen and (max-width: 600px) {
+    .News{
+        padding: 7rem 2rem 2rem 2rem;
+    }
+
+}

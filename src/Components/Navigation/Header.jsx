@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import RoundButton from '../Buttons/RoundButton';
 import './Header.css';
@@ -8,8 +8,24 @@ function Header() {
   const [HamburgerState,setHamburgerState] = useState(false);
   let location = useLocation();
 
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className={location.pathname=='/'?"Header HomeHeader":"Header"}>
+    <header className={location.pathname=='/'&&scrollPosition==0?"Header HomeHeader":"Header"}>
         <div className='header-container'>
             <p className='logo'>CalmDeer</p>
             <ul className={HamburgerState?'nav-bar':'nav-bar nav-bar-hidden'}>

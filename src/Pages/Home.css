@@ -112,3 +112,26 @@
     bottom: 0;
     right: 260px;
 }
+
+
+@media screen and (max-width: 600px) {
+    .Home{
+        padding: 0 2rem;
+    }
+    .hero-image-background{ 
+        height: 70vh;
+        width: 100vw;
+    }
+    .hero-image-overlay{
+        height: 70vh;
+        width: 100vw;
+    }
+    .hero-text-container{
+        width: 100%;
+    }
+    .hero-title{
+        width: 100%;
+        color: var(--color-background);
+        z-index: 1;
+    }
+}

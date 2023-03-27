@@ -10,11 +10,11 @@ function Home() {
   const HeroImageVariants = {
     in: {
         opacity: 1,
-        x: "0",
+        y: "0",
     },
     out: {
         opacity: 0,
-        x: "150vh",
+        y: "-70vh",
     },
     };
     const HeroImageTransition = {
