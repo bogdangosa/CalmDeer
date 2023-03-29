@@ -2,6 +2,10 @@
     padding: 7rem 5rem 0 5rem;
     width: 1440px;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     /*background-color: var(--color-background-secondary);*/
 }
 
@@ -9,6 +13,7 @@
     font-size: 4rem;
     color: var(--color-text-primary);
     padding-bottom: 1rem;
+    text-align: center;
 }
 
 .contact-form{
@@ -27,6 +32,50 @@
 }
 .contact-description{
     color: var(--color-text-secondary);
+    text-align: center;
+    width: 80%;
+}
+
+.contact-social-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+.contact-subtitle{
+    margin: 2rem 0;
+    font-size: 3rem;
+    color: var(--color-text-primary);
+    padding-bottom: 1rem;
+}
+
+.contact-social-links-container{
+    margin-bottom: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+.contact-social-link{
+    width: 6rem;
+    height: 6rem;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.contact-social-link path{
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.contact-social-link:hover path{
+    fill: var(--color-accent-primary);
 }
 
 
@@ -36,17 +85,40 @@
     }
 }
 
+@media screen and (max-width: 950px) {
+
+    .contact-form{
+        width: 100%;
+    }
+    
+    .contact-social-container{
+        width: 100%;
+    }
+    .contact-description{
+        width: 100%;
+    }
+    .contact-social-link{
+        width: 4rem;
+        height: 4rem;
+    }
+
+}
 
 @media screen and (max-width: 600px) {
     .Contact{
         padding: 7rem 2rem 2rem 2rem;
     }
-    .contact-form{
-        width: 100%;
-    }
     .contact-form-sameline{
         gap: 2rem;
         flex-direction: column;
+    }
+    .contact-social-link{
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .contact-social-links-container{
+        gap: 1rem;
     }
 
 }
