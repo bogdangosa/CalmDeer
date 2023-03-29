@@ -3,6 +3,7 @@ import SimpleButton from '../Components/Buttons/SimpleButton';
 import './Home.css';
 import {motion} from 'framer-motion'
 import SimpleButton2 from '../Components/Buttons/SimpleButton2';
+import ArrowButton from '../Components/Buttons/ArrowButton';
 
 function Home() {
 
@@ -14,7 +15,7 @@ function Home() {
     },
     out: {
         opacity: 0,
-        y: "-70vh",
+        y: "-100vh",
     },
     };
     const HeroImageTransition = {
@@ -104,6 +105,17 @@ function Home() {
             <img src='./hero_image.png'></img>
           </motion.div>
         </div>
+        <div className='home-work-section'>
+            <img src='./ourwork-image.png' className='home-work-image'/>
+
+            <div className='home-work-text'>
+              <h2>What we do</h2>
+              <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. Mauris viverra tincidunt risus et imperdiet. Pellentesque nec congue ipsum. Aenean pellentesque suscipit enim eu dapibus. Aliquam nec faucibus quam, id lobortis est.</p>
+              <ArrowButton>Find out more</ArrowButton>
+            </div>
+        </div>
+
+
     </div>
   )
 }

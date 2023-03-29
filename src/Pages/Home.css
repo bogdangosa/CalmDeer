@@ -114,6 +114,35 @@
 }
 
 
+.home-work-section{
+    min-height: 50vh;
+    padding: 6rem 0 ;
+    display: flex;
+    gap: 5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.home-work-image{
+    width: 40%;
+}
+
+.home-work-text{
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.home-work-text h2{
+    font-size: 3rem;
+    color: var(--color-text-primary);
+}
+
+.home-work-text p{
+    color: var(--color-text-secondary);
+}
+
+
 @media screen and (max-width: 600px) {
     .Home{
         padding: 0 2rem;
@@ -144,5 +173,13 @@
     
     .moving-hero-background{
         width: 200%;
+    }
+    
+    .home-work-section{
+        padding: 2rem 0;
+    }
+    
+    .home-work-image{
+        display: none;
     }
 }
