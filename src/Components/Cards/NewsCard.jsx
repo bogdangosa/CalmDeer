@@ -28,7 +28,7 @@ function NewsCard({title,image,description,date,animation_delay,onClick,classNam
     exit="out"
     variants={Variants}
     transition={Transition}>
-        <div className={'NewsCard '+className}>
+        <div className={'NewsCard '+className} onClick={()=>onClick()}> 
             <img src={image} className="news_card_image"/>
             <div className='news_card_text'>
                 <h3 className='news_card_title' >{title}</h3>

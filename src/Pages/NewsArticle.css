@@ -1,0 +1,30 @@
+.NewsArticle{
+    padding: 8rem 5rem 4rem 5rem;
+    min-height: 100vh;
+}
+
+.NewsArticle h1{
+    color: var(--color-text-primary);
+    font-size: 4rem;
+    line-height: 90%;
+    margin-bottom: 1rem;
+}
+.newsarticle-date{
+    color: var(--color-accent-primary);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+
+.newsarticle-text{
+    color: var(--color-text-secondary);
+}
+
+.newsarticle-image{
+    float: right;
+    width: 30rem;
+    object-fit: contain;
+    margin: 0 0 2rem 2rem;
+    
+}
