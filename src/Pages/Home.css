@@ -116,7 +116,7 @@
 
 .home-work-section{
     min-height: 50vh;
-    padding: 6rem 0 ;
+    padding: 6rem 0 3rem 0;
     display: flex;
     gap: 5rem;
     justify-content: flex-start;
@@ -143,10 +143,38 @@
 }
 
 
-@media screen and (max-width: 600px) {
+.home-partner-section{
+    padding: 0 0 3rem 0;
+}
+.home-partner-section h2{
+    font-size: 3rem;
+    color: var(--color-text-primary);
+    margin-bottom: 2rem;
+}
+.partner-slide {
+    overflow: hidden;
+}
+
+.swiper{
+    max-width: 90vw;
+    padding-bottom: 2rem!important;
+}
+.swiper-slide img{
+    width: 100%;
+    object-fit: contain;
+}
+
+
+@media screen and (max-width: 1000px) {
     .Home{
         padding: 0 2rem;
     }
+    .swiper{
+        max-width: 80vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
     .hero-image-background{ 
         height: 70vh;
         width: 100vw;

@@ -5,6 +5,14 @@ import {motion} from 'framer-motion'
 import SimpleButton2 from '../Components/Buttons/SimpleButton2';
 import ArrowButton from '../Components/Buttons/ArrowButton';
 import { useNavigate } from 'react-router-dom';
+import {Swiper,SwiperSlide} from 'swiper/react';
+
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination } from 'swiper';
 
 function Home() {
   const navigate = useNavigate();
@@ -114,6 +122,31 @@ function Home() {
               <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. Mauris viverra tincidunt risus et imperdiet. Pellentesque nec congue ipsum. Aenean pellentesque suscipit enim eu dapibus. Aliquam nec faucibus quam, id lobortis est.</p>
               <ArrowButton onClick={()=>navigate('/OurWork')}>Find out more</ArrowButton>
             </div>
+        </div>
+
+        <div className='home-partner-section'>
+          <h2>Our Partners</h2>
+          <Swiper
+            modules={[Pagination]}
+              spaceBetween={50}
+              slidesPerView={1}
+              pagination={{ clickable: true }}
+              breakpoints={{
+                1200: {
+                slidesPerView: 4,
+                },
+                700: {
+                slidesPerView: 2,
+                }
+              }}
+              onSwiper={(swiper) => console.log(swiper)}
+            >
+              <SwiperSlide className='partner-slide'><img src="./partners_logo/Firemonkeys_Studios_logo.png"/></SwiperSlide>
+              <SwiperSlide><img src="./partners_logo/Blizzard_Entertainment_Logo.png"/></SwiperSlide>
+              <SwiperSlide><img src="./partners_logo/respawn_logo.png"/></SwiperSlide>
+              <SwiperSlide><img src="./partners_logo/naughty_dog_logo.png"/></SwiperSlide>
+              <SwiperSlide><img src="./partners_logo/ea_sports_logo.png"/></SwiperSlide>
+            </Swiper>
         </div>
 
 

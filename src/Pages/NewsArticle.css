@@ -28,3 +28,16 @@
     margin: 0 0 2rem 2rem;
     
 }
+
+
+@media screen and (max-width: 600px) {
+    .NewsArticle{
+        padding: 8rem 2rem 3rem 2rem;
+    }
+    .newsarticle-image{
+        width: 100%;
+    }
+    .NewsArticle h1{
+        font-size: 2.5rem;
+    }
+}
