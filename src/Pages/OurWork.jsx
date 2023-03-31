@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import {  useNavigate } from 'react-router-dom';
 import ScrollToTop from '../Components/Auxiliary/ScrolltoTop';
 import CategoryCard from '../Components/Cards/CategoryCard';
+import { motion } from 'framer-motion';
 import './OurWork.css';
 
 function OurWork() {
@@ -87,8 +88,16 @@ function OurWork() {
   return (
     <div className='OurWork'>
         <ScrollToTop/>
-        <h1 className="ourwork_title">We are proud of <span className='accent'>Our Work</span></h1>
-        <p className="text our_work_subtitle">Fusce mattis finibus urna, eu dictum enim porttitor sed. Donec egestas eget quam eu ullamcorper. Praesent turpis libero, vestibulum ut faucibus nec, finibus sed quam. Fusce rutrum velit augue, eget placerat purus maximus eu.</p>
+        <motion.div
+            initial={{ opacity: 0 , x:-100}}
+            whileInView={{ opacity: 1 , x:0, transition: {
+            type: "tween",
+            duration: 1
+            }}}
+            viewport={{ once: true, amount: 0.5 }}>
+            <h1 className="ourwork_title">We are proud of <span className='accent'>Our Work</span></h1>
+            <p className="text our_work_subtitle">Fusce mattis finibus urna, eu dictum enim porttitor sed. Donec egestas eget quam eu ullamcorper. Praesent turpis libero, vestibulum ut faucibus nec, finibus sed quam. Fusce rutrum velit augue, eget placerat purus maximus eu.</p>
+        </motion.div>
         <div className='work_table_container'>
             <div className='category_menu'>
                 <p className={Category=="Conceptual"?'category_btn category_btn_active':'category_btn'} onClick={()=>setCategory("Conceptual")}>Conceptual</p>

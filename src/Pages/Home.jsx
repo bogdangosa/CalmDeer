@@ -123,7 +123,7 @@ function Home() {
               initial={{ opacity: 0 , x:100}}
               whileInView={{ opacity: 1 , x:0, transition: {
                 type: "tween",
-                duration: 0.5
+                duration: 0.7
               }}}
               viewport={{ once: true, amount: 0.8 }}>
               <h2 className='home-subtitle'>What we do</h2>
@@ -137,14 +137,22 @@ function Home() {
               initial={{ opacity: 0 , x:-100}}
               whileInView={{ opacity: 1 , x:0, transition: {
                 type: "tween",
-                duration: 0.5
+                duration: 0.7
               }}}
-              viewport={{ once: true, amount: 0.8 }}>
+              viewport={{ once: true, amount: 0.5 }}>
               <h2 className='home-subtitle'>How we work</h2>
               <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. Mauris viverra tincidunt risus et imperdiet. Pellentesque nec congue ipsum. Aenean pellentesque suscipit enim eu dapibus. Aliquam nec faucibus quam, id lobortis est. Nulla at sapien quis mi accumsan blandit nec ut turpis. Nulla elementum rutrum purus sed dictum. Quisque imperdiet nulla eget eros sagittis vulputate.\nNullam porttitor, odio ac rhoncus hendrerit, dui lectus dignissim dui, eget varius ante risus quis diam. Nulla non turpis et eros vestibulum sagittis sit amet et eros. Morbi feugiat ligula velit, at varius felis imperdiet id. Nunc volutpat iaculis odio, eget ullamcorper justo malesuada quis. Sed bibendum sapien nisi, et dapibus est pharetra et. Ut bibendum mattis arcu eu venenatis. Nulla quis pharetra justo, a rhoncus sem.</p>
               <ArrowButton onClick={()=>navigate('/Contact')}>Work with us</ArrowButton>
             </motion.div>
-            <img src='./ourwork-image.png' className='home-work-image'/>
+            <motion.div className='home-work-image2'
+              initial={{ opacity: 0 , y:100}}
+              whileInView={{ opacity: 1 , y:0, transition: {
+                type: "tween",
+                duration: 0.7
+              }}}
+              viewport={{ once: true, amount: 0.8 }}>
+              <img src='./image4.png'/>
+            </motion.div>
         </div>
 
         <div className='home-partner-section'>

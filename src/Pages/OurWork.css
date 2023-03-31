@@ -32,6 +32,9 @@
     -ms-transition: 300ms;
     -o-transition: 300ms;
 }
+.category_btn_active{
+    color: var(--color-accent-primary)
+}
 
 /*.category_btn_active::after{
     content: '';
