@@ -120,8 +120,8 @@ function Home() {
             <img src='./ourwork-image.png' className='home-work-image'/>
 
             <motion.div className='home-work-text' 
-              initial={{ opacity: 0 , x:100}}
-              whileInView={{ opacity: 1 , x:0, transition: {
+              initial={{ opacity: 0 , y:100}}
+              whileInView={{ opacity: 1 , y:0, transition: {
                 type: "tween",
                 duration: 0.7
               }}}
