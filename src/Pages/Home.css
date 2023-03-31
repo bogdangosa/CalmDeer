@@ -132,6 +132,8 @@
 
 
 .home-work-section{
+    width: 100%;
+    overflow-x: hidden;
     min-height: 50vh;
     padding: 6rem 0 3rem 0;
     display: flex;

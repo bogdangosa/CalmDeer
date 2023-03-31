@@ -125,7 +125,7 @@ function Home() {
                 type: "tween",
                 duration: 0.7
               }}}
-              viewport={{ once: true, amount: 0.8 }}>
+              viewport={{ once: true, amount: 0.5 }}>
               <h2 className='home-subtitle'>What we do</h2>
               <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. Mauris viverra tincidunt risus et imperdiet. Pellentesque nec congue ipsum. Aenean pellentesque suscipit enim eu dapibus. Aliquam nec faucibus quam, id lobortis est.</p>
               <ArrowButton onClick={()=>navigate('/OurWork')}>Find out more</ArrowButton>
