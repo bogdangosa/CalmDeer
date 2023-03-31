@@ -185,7 +185,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .hero-image-background{ 
         height: 70vh;
         width: 100vw;
@@ -229,5 +229,12 @@
     .hero-cta-btn{
         right: 0;
         bottom: -70px;
+    }
+    .home-subtitle{
+        font-size: 2.5rem;
+    }
+    
+    .home-subtitle::before{
+        bottom: 0.5rem;
     }
 }

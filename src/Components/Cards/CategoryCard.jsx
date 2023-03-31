@@ -28,7 +28,7 @@ function CategoryCard({title,image,animation_delay,onClick,className}) {
     exit="out"
     variants={Variants}
     transition={Transition}>
-        <div className={'CategoryCard '+className}>
+        <div className={'CategoryCard '+className} onClick={()=>onClick()}>
             <h3 className='category_card_title' >{title}</h3>
             <img src={image} className="category_card_image"/>
         </div>

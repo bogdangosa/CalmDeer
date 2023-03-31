@@ -1,4 +1,5 @@
-import { Outlet } from "react-router-dom"
+import { Outlet, ScrollRestoration } from "react-router-dom"
+import ScrolltoTop from "../Components/Auxiliary/ScrolltoTop"
 import Footer from "../Components/Navigation/Footer"
 import Header from "../Components/Navigation/Header"
 

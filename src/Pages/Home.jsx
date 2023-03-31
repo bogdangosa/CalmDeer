@@ -13,6 +13,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper';
+import ScrollToTop from '../Components/Auxiliary/ScrolltoTop';
 
 function Home() {
   const navigate = useNavigate();
@@ -79,6 +80,7 @@ function Home() {
 
   return (
     <div className='Home'>
+      <ScrollToTop/>
         <div className='hero-section'>
 
           <motion.h1  className='hero-title'               

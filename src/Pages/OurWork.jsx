@@ -1,10 +1,14 @@
 import { useEffect, useState } from 'react';
+import {  useNavigate } from 'react-router-dom';
+import ScrollToTop from '../Components/Auxiliary/ScrolltoTop';
 import CategoryCard from '../Components/Cards/CategoryCard';
 import './OurWork.css';
 
 function OurWork() {
     const [Category,setCategory] = useState("Conceptual");
     const [SubcategoryArray,setSubcategoryArray] = useState([]);
+
+    const navigate = useNavigate();
 
     useEffect(()=>{
         setSubcategoryArray([]);
@@ -82,6 +86,7 @@ function OurWork() {
 
   return (
     <div className='OurWork'>
+        <ScrollToTop/>
         <h1 className="ourwork_title">We are proud of <span className='accent'>Our Work</span></h1>
         <p className="text our_work_subtitle">Fusce mattis finibus urna, eu dictum enim porttitor sed. Donec egestas eget quam eu ullamcorper. Praesent turpis libero, vestibulum ut faucibus nec, finibus sed quam. Fusce rutrum velit augue, eget placerat purus maximus eu.</p>
         <div className='work_table_container'>
@@ -92,7 +97,7 @@ function OurWork() {
             </div>
             <div className='work_table'>
                 {SubcategoryArray.map((subcategory,index)=>{
-                    return <CategoryCard title={subcategory.title} image={subcategory.image} animation_delay={index+1}/>
+                    return <CategoryCard key={index} onClick={()=>navigate(`/OurWork/${subcategory.title}`)} title={subcategory.title} image={subcategory.image} animation_delay={index+1}/>
                 })}
             </div>
 

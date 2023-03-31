@@ -4,6 +4,7 @@ import SimpleButton2 from '../Components/Buttons/SimpleButton2';
 import TextInput from '../Components/formElements/TextInput';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
+import ScrollToTop from '../Components/Auxiliary/ScrolltoTop';
 
 function Contact() {
   const form_ref = useRef()
@@ -40,6 +41,7 @@ function Contact() {
 
   return (
     <div className='Contact'>
+        <ScrollToTop/>
         <h1 className='contact-title'>Work with Us</h1>
         <p className='contact-description'>Fusce mattis finibus urna, eu dictum enim porttitor sed. Donec egestas eget quam eu ullamcorper. Praesent turpis libero, vestibulum ut faucibus nec, finibus sed quam. Fusce rutrum velit augue, eget placerat purus maximus eu.</p>
         <form ref={form_ref} className='contact-form' onSubmit={sendEmail}>

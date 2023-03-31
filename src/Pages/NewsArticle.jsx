@@ -1,6 +1,8 @@
 import { gql, GraphQLClient } from 'graphql-request';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Loading from '../Components/Auxiliary/Loading';
+import ScrollToTop from '../Components/Auxiliary/ScrolltoTop';
 import './NewsArticle.css';
 
 
@@ -42,11 +44,12 @@ function NewsArticle() {
 
 
     if(ArticleData==null)
-        return <p>Loading...</p>
+    return <Loading />;
 
 
   return(
   <div className="NewsArticle">
+        <ScrollToTop/>
         <h1>{ArticleData.title}</h1>
         <p className='newsarticle-date'>{ArticleData.date}</p>
         <div className='newsarticle-content'>

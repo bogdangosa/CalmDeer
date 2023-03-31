@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import RoundButton from '../Buttons/RoundButton';
 import './Header.css';
 import { useLocation } from 'react-router-dom';
@@ -7,6 +7,8 @@ import { useLocation } from 'react-router-dom';
 function Header() {
   const [HamburgerState,setHamburgerState] = useState(false);
   let location = useLocation();
+  const navigate = useNavigate();
+
 
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -25,9 +27,9 @@ function Header() {
   }, []);
 
   return (
-    <header className={location.pathname=='/'&&scrollPosition==0?"Header HomeHeader":"Header"}>
+    <header className={location.pathname=='/'&&scrollPosition==0?"Header HomeHeader":(location.pathname.slice(0,9)=='/OurWork/'&&scrollPosition==0?"Header ProjectHeader":"Header")}>
         <div className='header-container'>
-            <p className='logo'>CalmDeer</p>
+            <p className='logo' onClick={()=>navigate('/')}>CalmDeer</p>
             <ul className={HamburgerState?'nav-bar':'nav-bar nav-bar-hidden'}>
                 <NavLink to='/' className={({ isActive }) => isActive ? "nav-links-active nav-links" : "nav-links"} onClick={()=>setHamburgerState(false)}><p data-text="Home">Home</p></NavLink>
                 <NavLink to='/OurWork' className={({ isActive }) => isActive ? "nav-links-active nav-links" : "nav-links"} onClick={()=>setHamburgerState(false)}><p data-text="Our Work">Our Work</p></NavLink>
