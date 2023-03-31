@@ -119,19 +119,31 @@ function Home() {
         <div className='home-work-section'>
             <img src='./ourwork-image.png' className='home-work-image'/>
 
-            <div className='home-work-text'>
+            <motion.div className='home-work-text' 
+              initial={{ opacity: 0 , x:100}}
+              whileInView={{ opacity: 1 , x:0, transition: {
+                type: "tween",
+                duration: 0.5
+              }}}
+              viewport={{ once: true, amount: 0.8 }}>
               <h2 className='home-subtitle'>What we do</h2>
               <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. Mauris viverra tincidunt risus et imperdiet. Pellentesque nec congue ipsum. Aenean pellentesque suscipit enim eu dapibus. Aliquam nec faucibus quam, id lobortis est.</p>
               <ArrowButton onClick={()=>navigate('/OurWork')}>Find out more</ArrowButton>
-            </div>
+            </motion.div>
         </div>
 
         <div className='home-work-section'>
-            <div className='home-work-text'>
+            <motion.div className='home-work-text'
+              initial={{ opacity: 0 , x:-100}}
+              whileInView={{ opacity: 1 , x:0, transition: {
+                type: "tween",
+                duration: 0.5
+              }}}
+              viewport={{ once: true, amount: 0.8 }}>
               <h2 className='home-subtitle'>How we work</h2>
               <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. Mauris viverra tincidunt risus et imperdiet. Pellentesque nec congue ipsum. Aenean pellentesque suscipit enim eu dapibus. Aliquam nec faucibus quam, id lobortis est. Nulla at sapien quis mi accumsan blandit nec ut turpis. Nulla elementum rutrum purus sed dictum. Quisque imperdiet nulla eget eros sagittis vulputate.\nNullam porttitor, odio ac rhoncus hendrerit, dui lectus dignissim dui, eget varius ante risus quis diam. Nulla non turpis et eros vestibulum sagittis sit amet et eros. Morbi feugiat ligula velit, at varius felis imperdiet id. Nunc volutpat iaculis odio, eget ullamcorper justo malesuada quis. Sed bibendum sapien nisi, et dapibus est pharetra et. Ut bibendum mattis arcu eu venenatis. Nulla quis pharetra justo, a rhoncus sem.</p>
               <ArrowButton onClick={()=>navigate('/Contact')}>Work with us</ArrowButton>
-            </div>
+            </motion.div>
             <img src='./ourwork-image.png' className='home-work-image'/>
         </div>
 
