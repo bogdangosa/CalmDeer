@@ -79,6 +79,9 @@
     width: 90%;
     padding-bottom: 2rem;
 }
+.mobile_work_category_menu{
+    display: none;
+}
 
 @media screen and (max-width: 1440px) {
     .OurWork{
@@ -99,6 +102,12 @@
     .ourwork_title{
         font-size: 3rem;
     }
+    .mobile_work_category_menu{
+        display: block;
+    }    
+    .our_work_subtitle{
+        width: 100%;
+    }
 }
 
 
@@ -110,7 +119,6 @@
         grid-template-columns: 1fr;
     }
     .our_work_subtitle{
-        width: 100%;
         font-size: 0.9rem;
     }
     .ourwork_title{

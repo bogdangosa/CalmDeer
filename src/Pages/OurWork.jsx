@@ -4,10 +4,13 @@ import ScrollToTop from '../Components/Auxiliary/ScrolltoTop';
 import CategoryCard from '../Components/Cards/CategoryCard';
 import { motion } from 'framer-motion';
 import './OurWork.css';
+import SelectField from '../Components/formElements/SelectField';
 
 function OurWork() {
     const [Category,setCategory] = useState("Conceptual");
     const [SubcategoryArray,setSubcategoryArray] = useState([]);
+
+    const category_options = new Array("Conceptual","2D Production","3D Production");
 
     const navigate = useNavigate();
 
@@ -104,6 +107,7 @@ function OurWork() {
                 <p className={Category=="2D Production"?'category_btn category_btn_active':'category_btn'} onClick={()=>setCategory("2D Production")}>2D Production</p>
                 <p className={Category=="3D Production"?'category_btn category_btn_active':'category_btn'} onClick={()=>setCategory("3D Production")}>3D Production</p>
             </div>
+            <SelectField className="mobile_work_category_menu" value={Category} setValue={(value)=>setCategory(value)} options={category_options}/>
             <div className='work_table'>
                 {SubcategoryArray.map((subcategory,index)=>{
                     return <CategoryCard key={index} onClick={()=>navigate(`/OurWork/${subcategory.title}`)} title={subcategory.title} image={subcategory.image} animation_delay={index+1}/>
