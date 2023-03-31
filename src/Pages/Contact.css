@@ -78,6 +78,32 @@
     fill: var(--color-accent-primary);
 }
 
+.error-text{
+    color: var(--color-accent-primary);
+    font-size: 2rem;
+}
+.succes-text{
+    color:  #00A300;
+    font-size: 2rem;
+}
+
+
+.contact-btn:hover, .contact-btn::before{
+    background: var(--color-text-primary);
+}
+.contact-btn span:first-child {
+    color: var(--color-background);
+}
+
+
+
+.contact-form-container{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
 
 @media screen and (max-width: 1440px) {
     .Contact{

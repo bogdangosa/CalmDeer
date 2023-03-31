@@ -9,3 +9,17 @@
     font-size: 1.2rem;
     width: 100%;
 }
+.TextInputContainer{
+    position: relative;   
+    width: 100%;
+
+}
+
+.TextInputContainer::before{
+    content: '*';
+    font-size: 2rem;
+    color: var(--color-accent-primary);
+    position: absolute;
+    top: 0;
+    right: 0;
+}

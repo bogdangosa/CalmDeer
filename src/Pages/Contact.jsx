@@ -1,29 +1,60 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import SimpleButton from '../Components/Buttons/SimpleButton';
 import SimpleButton2 from '../Components/Buttons/SimpleButton2';
 import TextInput from '../Components/formElements/TextInput';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 function Contact() {
+  const form_ref = useRef()
+
     const [Name,setName] = useState("");
     const [Email,setEmail] = useState("");
     const [Title,setTitle] = useState("");
     const [Message,setMessage] = useState("");
+    const [SuccesText,setSuccesText] = useState(false);
+    const [ErrorText,setErrorText] = useState(false);
+
+
+    const sendEmail = () => {
+      console.log(form_ref.current);
+      if(Name==""||Email==""||Title==""||Message==""){
+        setErrorText(true);
+        setSuccesText(false);
+        return;
+      }
+        
+
+  
+      emailjs.sendForm('service_epk99w5', 'template_miw9xey', form_ref.current, 'kjZmu4x22_ToT2D8c')
+        .then((result) => {
+            console.log(result.text);
+            setSuccesText(true);        
+            setErrorText(false);
+        }, (error) => {
+            setErrorText(true);
+            setSuccesText(false);
+            console.log(error.text);
+        });
+    };
 
   return (
     <div className='Contact'>
         <h1 className='contact-title'>Work with Us</h1>
         <p className='contact-description'>Fusce mattis finibus urna, eu dictum enim porttitor sed. Donec egestas eget quam eu ullamcorper. Praesent turpis libero, vestibulum ut faucibus nec, finibus sed quam. Fusce rutrum velit augue, eget placerat purus maximus eu.</p>
-        <div className='contact-form'>
+        <form ref={form_ref} className='contact-form' onSubmit={sendEmail}>
             <div className='contact-form-sameline'>
-                <TextInput placeholder="Your Name" value={Name} setValue={(name)=>setName(name)}/>
-                <TextInput placeholder="Your Email" value={Email} setValue={(email)=>setEmail(email)}/>
+                <TextInput name="user_name" type="text" placeholder="Your Name" value={Name} setValue={(name)=>setName(name)}/>
+                <TextInput name="user_email" type="email" placeholder="Your Email" value={Email} setValue={(email)=>setEmail(email)}/>
             </div>
-            <TextInput placeholder="Title" value={Title} setValue={(name)=>setTitle(name)}/>
-            <TextInput placeholder="Your Message" value={Message} setValue={(message)=>setMessage(message)}/>
-
-            <SimpleButton2>Send</SimpleButton2>
-        </div>
+            <TextInput name="title"  type="text" placeholder="Title" value={Title} setValue={(name)=>setTitle(name)}/>
+            <TextInput name="message" type="text" placeholder="Your Message" value={Message} setValue={(message)=>setMessage(message)}/>
+            <div className='contact-form-container'>
+              <SimpleButton className="contact-btn" onClick={()=>sendEmail()}>Send</SimpleButton>
+              {SuccesText?<p className='succes-text'>Your email was sent succesfully!</p>:<></>}
+              {ErrorText?<p className='error-text'>Please fill all the fields before submiting!</p>:<></>}
+            </div>
+        </form>
         <div className='contact-social-container'>
           <h2 className='contact-subtitle'>Find us Here</h2>
           <div className='contact-social-links-container'>

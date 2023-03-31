@@ -94,7 +94,7 @@ function Home() {
             
             <div className='hero-cta-buttons-container'>
               <SimpleButton className="hero-cta-btn" onClick={()=>navigate('/OurWork')}>Our Work</SimpleButton>
-              <SimpleButton2 className="hero-cta-btn-2" onClick={()=>navigate('/Contact')}>Get in Touch</SimpleButton2>
+              <SimpleButton className="hero-cta-btn-2" onClick={()=>navigate('/Contact')}>Get in Touch</SimpleButton>
             </div>
 
             <motion.div className='hero-background' initial="out"animate="in"exit="out"
@@ -118,14 +118,23 @@ function Home() {
             <img src='./ourwork-image.png' className='home-work-image'/>
 
             <div className='home-work-text'>
-              <h2>What we do</h2>
+              <h2 className='home-subtitle'>What we do</h2>
               <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. Mauris viverra tincidunt risus et imperdiet. Pellentesque nec congue ipsum. Aenean pellentesque suscipit enim eu dapibus. Aliquam nec faucibus quam, id lobortis est.</p>
               <ArrowButton onClick={()=>navigate('/OurWork')}>Find out more</ArrowButton>
             </div>
         </div>
 
+        <div className='home-work-section'>
+            <div className='home-work-text'>
+              <h2 className='home-subtitle'>How we work</h2>
+              <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. Mauris viverra tincidunt risus et imperdiet. Pellentesque nec congue ipsum. Aenean pellentesque suscipit enim eu dapibus. Aliquam nec faucibus quam, id lobortis est. Nulla at sapien quis mi accumsan blandit nec ut turpis. Nulla elementum rutrum purus sed dictum. Quisque imperdiet nulla eget eros sagittis vulputate.\nNullam porttitor, odio ac rhoncus hendrerit, dui lectus dignissim dui, eget varius ante risus quis diam. Nulla non turpis et eros vestibulum sagittis sit amet et eros. Morbi feugiat ligula velit, at varius felis imperdiet id. Nunc volutpat iaculis odio, eget ullamcorper justo malesuada quis. Sed bibendum sapien nisi, et dapibus est pharetra et. Ut bibendum mattis arcu eu venenatis. Nulla quis pharetra justo, a rhoncus sem.</p>
+              <ArrowButton onClick={()=>navigate('/Contact')}>Work with us</ArrowButton>
+            </div>
+            <img src='./ourwork-image.png' className='home-work-image'/>
+        </div>
+
         <div className='home-partner-section'>
-          <h2>Our Partners</h2>
+          <h2 className='home-subtitle'>Our Partners</h2>
           <Swiper
             modules={[Pagination]}
               spaceBetween={50}
