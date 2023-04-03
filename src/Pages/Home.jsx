@@ -1,7 +1,7 @@
 import RoundButton from '../Components/Buttons/RoundButton';
 import SimpleButton from '../Components/Buttons/SimpleButton';
 import './Home.css';
-import {motion} from 'framer-motion'
+import {animate, motion} from 'framer-motion'
 import SimpleButton2 from '../Components/Buttons/SimpleButton2';
 import ArrowButton from '../Components/Buttons/ArrowButton';
 import { useNavigate } from 'react-router-dom';
@@ -116,6 +116,22 @@ function Home() {
             <img src='./hero_image.png'></img>
           </motion.div>
         </div>
+
+        <motion.p 
+          initial={{x:"-50%",}}
+          animate={{x:"-320%"}}
+          transition={{duration:20,repeat: "Infinity",ease: "linear",}}
+        
+        className='background-moving-text' >Concept Art Casual Art Environment Design Character Design Slots Games Art Pixel art Pixel animation Frame by frame animation</motion.p>
+         <motion.p 
+          initial={{x:"-320%",}}
+          animate={{x:"-50%"}}
+          transition={{duration:20,repeat: "Infinity",ease: "linear",}}
+        
+        className='background-moving-text' >2D Art 2D Characters Design 2D Environment Design 3D Art 3D Characters Design 3D Environment Design 3D Game Modeling 3D Sculpting 3D Rigging UI/UX Design</motion.p>
+        
+
+
         <div className='home-work-section'>
             <img src='./ourwork-image.png' className='home-work-image'/>
 
