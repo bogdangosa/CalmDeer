@@ -12,7 +12,8 @@ import {Swiper,SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Navigation, Pagination } from 'swiper';
+import 'swiper/css/autoplay';
+import { Autoplay, Navigation, Pagination } from 'swiper';
 import ScrollToTop from '../Components/Auxiliary/ScrolltoTop';
 
 function Home() {
@@ -117,23 +118,44 @@ function Home() {
           </motion.div>
         </div>
 
-        <motion.p 
-          initial={{x:"-50%",}}
-          animate={{x:"-320%"}}
-          transition={{duration:20,repeat: "Infinity",ease: "linear",}}
-        
-        className='background-moving-text' >Concept Art Casual Art Environment Design Character Design Slots Games Art Pixel art Pixel animation Frame by frame animation</motion.p>
-         <motion.p 
-          initial={{x:"-320%",}}
-          animate={{x:"-50%"}}
-          transition={{duration:20,repeat: "Infinity",ease: "linear",}}
-        
-        className='background-moving-text' >2D Art 2D Characters Design 2D Environment Design 3D Art 3D Characters Design 3D Environment Design 3D Game Modeling 3D Sculpting 3D Rigging UI/UX Design</motion.p>
-        
+
+        <div className='moving-text-container'>
+          <motion.p 
+            initial={{x:"-50%",}}
+            animate={{x:"-320%"}}
+            transition={{duration:20,repeat: "Infinity",ease: "linear",}}
+          
+          className='background-moving-text' >Concept Art Casual Art Environment Design Character Design Slots Games Art Pixel art Pixel animation Frame by frame animation</motion.p>
+          <motion.p 
+            initial={{x:"-320%",}}
+            animate={{x:"-50%"}}
+            transition={{duration:20,repeat: "Infinity",ease: "linear",}}
+          
+          className='background-moving-text' >2D Art 2D Characters Design 2D Environment Design 3D Art 3D Characters Design 3D Environment Design 3D Game Modeling 3D Sculpting 3D Rigging UI/UX Design</motion.p>
+
+        </div>
 
 
-        <div className='home-work-section'>
-            <img src='./ourwork-image.png' className='home-work-image'/>
+        <div className='home-work-section home-what-we-do'>
+            <div className='home-work-image-container'>
+              <motion.div className='red-rectangle-bg' ></motion.div>
+              <div className='work-image-swiper-pagination'></div>
+              <Swiper
+                slidesPerView={1} 
+                modules={[Pagination,Autoplay]}
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }}
+                loop={true}
+                pagination={{ clickable: true,el: '.work-image-swiper-pagination' }}>
+                  <SwiperSlide><img src='./image6.png' className='home-work-image'/></SwiperSlide>
+                  <SwiperSlide><img src='./image5.png' className='home-work-image'/></SwiperSlide>
+                  <SwiperSlide><img src='./image4.png' className='home-work-image'/></SwiperSlide>
+                  <SwiperSlide><img src='./image3.png' className='home-work-image'/></SwiperSlide>
+
+              </Swiper>
+            </div>
 
             <motion.div className='home-work-text' 
               initial={{ opacity: 0 , y:100}}
@@ -148,7 +170,7 @@ function Home() {
             </motion.div>
         </div>
 
-        <div className='home-work-section'>
+        <div className='home-work-section home-how-we-work'>
             <motion.div className='home-work-text'
               initial={{ opacity: 0 , x:-100}}
               whileInView={{ opacity: 1 , x:0, transition: {
