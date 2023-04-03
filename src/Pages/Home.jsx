@@ -15,6 +15,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Autoplay, Navigation, Pagination } from 'swiper';
 import ScrollToTop from '../Components/Auxiliary/ScrolltoTop';
+import GameCard from '../Components/Cards/GameCard';
 
 function Home() {
   const navigate = useNavigate();
@@ -138,32 +139,48 @@ function Home() {
 
         <div className='home-work-section home-what-we-do'>
             <div className='home-work-image-container'>
-              <motion.div className='red-rectangle-bg' ></motion.div>
+              <motion.div className='red-rectangle-bg' 
+              initial={{ opacity: 0 , y:400,height:"40rem"}}
+              whileInView={{ opacity: 1 , y:0 , height: "22rem", transition: {
+                type: "tween",
+                duration: 0.8,
+                delay:0.5,
+              }}}
+              viewport={{ once: true,}}></motion.div>
               <div className='work-image-swiper-pagination'></div>
-              <Swiper
-                slidesPerView={1} 
-                modules={[Pagination,Autoplay]}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}
-                loop={true}
-                pagination={{ clickable: true,el: '.work-image-swiper-pagination' }}>
-                  <SwiperSlide><img src='./image6.png' className='home-work-image'/></SwiperSlide>
-                  <SwiperSlide><img src='./image5.png' className='home-work-image'/></SwiperSlide>
-                  <SwiperSlide><img src='./image4.png' className='home-work-image'/></SwiperSlide>
-                  <SwiperSlide><img src='./image3.png' className='home-work-image'/></SwiperSlide>
+              <motion.div
+              initial={{ opacity: 0 , y:-100,height:"1rem",overflow:"hidden"}}
+                whileInView={{ opacity: 1 , y:0,height:"25rem" , transition: {
+                  type: "tween",
+                  duration: 0.8,
+                  delay:0.7,
+                }}}
+               viewport={{ once: true, amount: 0.5 }}>
+                <Swiper
+                  slidesPerView={1} 
+                  modules={[Pagination,Autoplay]}
+                  autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                  }}
+                  loop={true}
+                  pagination={{ clickable: true,el: '.work-image-swiper-pagination' }}>
+                    <SwiperSlide><img src='./image6.png' className='home-work-image'/></SwiperSlide>
+                    <SwiperSlide><img src='./image5.png' className='home-work-image'/></SwiperSlide>
+                    <SwiperSlide><img src='./image4.png' className='home-work-image'/></SwiperSlide>
+                    <SwiperSlide><img src='./image3.png' className='home-work-image'/></SwiperSlide>
 
-              </Swiper>
+                </Swiper>
+              </motion.div>
             </div>
 
             <motion.div className='home-work-text' 
               initial={{ opacity: 0 , y:100}}
               whileInView={{ opacity: 1 , y:0, transition: {
                 type: "tween",
-                duration: 0.7
-              }}}
-              viewport={{ once: true, amount: 0.5 }}>
+                duration: 0.7,
+                delay:0.5,
+              }}}>
               <h2 className='home-subtitle'>What we do</h2>
               <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. Mauris viverra tincidunt risus et imperdiet. Pellentesque nec congue ipsum. Aenean pellentesque suscipit enim eu dapibus. Aliquam nec faucibus quam, id lobortis est.</p>
               <ArrowButton onClick={()=>navigate('/OurWork')}>Find out more</ArrowButton>
@@ -175,9 +192,9 @@ function Home() {
               initial={{ opacity: 0 , x:-100}}
               whileInView={{ opacity: 1 , x:0, transition: {
                 type: "tween",
-                duration: 0.7
-              }}}
-              viewport={{ once: true, amount: 0.5 }}>
+                duration: 0.7,
+                delay:0.5,
+              }}}>
               <h2 className='home-subtitle'>How we work</h2>
               <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. Mauris viverra tincidunt risus et imperdiet. Pellentesque nec congue ipsum. Aenean pellentesque suscipit enim eu dapibus. Aliquam nec faucibus quam, id lobortis est. Nulla at sapien quis mi accumsan blandit nec ut turpis. Nulla elementum rutrum purus sed dictum. Quisque imperdiet nulla eget eros sagittis vulputate.\nNullam porttitor, odio ac rhoncus hendrerit, dui lectus dignissim dui, eget varius ante risus quis diam. Nulla non turpis et eros vestibulum sagittis sit amet et eros. Morbi feugiat ligula velit, at varius felis imperdiet id. Nunc volutpat iaculis odio, eget ullamcorper justo malesuada quis. Sed bibendum sapien nisi, et dapibus est pharetra et. Ut bibendum mattis arcu eu venenatis. Nulla quis pharetra justo, a rhoncus sem.</p>
               <ArrowButton onClick={()=>navigate('/Contact')}>Work with us</ArrowButton>
@@ -193,12 +210,26 @@ function Home() {
             </motion.div>
         </div>
 
+        <div className='home-games-section'>
+          <h2 className='home-subtitle'>Games we've worked on</h2>
+          <div className='game-card-container'>
+            <GameCard title="Game Name" image="./image1.png" animation_delay={1}/>
+            <GameCard title="Another Game Name" image="./image6.png" animation_delay={2}/>
+            <GameCard title="Interesting Game" image="./image3.png" animation_delay={3}/>
+            <GameCard title="Custom Game" image="./hero_image.png" animation_delay={4}/>
+          </div>
+        </div>
+
         <div className='home-partner-section'>
           <h2 className='home-subtitle'>Our Partners</h2>
           <Swiper
-            modules={[Pagination]}
+            modules={[Pagination,Autoplay]}
               spaceBetween={50}
               slidesPerView={1}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
               pagination={{ clickable: true }}
               breakpoints={{
                 1200: {
