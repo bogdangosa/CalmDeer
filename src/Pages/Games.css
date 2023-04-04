@@ -1,0 +1,21 @@
+.Games-background{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-background-secondary);
+}
+
+.Games{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+}
+
+.game-card-container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}

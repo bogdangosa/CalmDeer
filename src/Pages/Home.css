@@ -268,20 +268,21 @@
     line-height: 0.9;
     z-index: -2;
 }
-.home-games-section{
+
+.home-stats-section{
+    min-height: 30vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 5rem;
+    align-items: center;
+    padding: 2rem;
+    background: url('../../../public/image2.png');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
 }
-
-.game-card-container{
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
 
 @media screen and (max-width: 1000px) {
     .Home{

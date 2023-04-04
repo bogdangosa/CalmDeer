@@ -8,7 +8,7 @@
   --color-accent-primary: #EC353E;
   --color-accent-secondary: #F5555C;
   --color-background: #fff;
-  --color-background-secondary: #f2f2f2;
+  --color-background-secondary: #f9f9f9;
   --color-text-primary: #333;
   --color-text-secondary: #808080;
 
@@ -37,7 +37,7 @@ p::selection, h1::selection, span::selection , h3::selection{
 
 .text{
   color:var(--color-text-secondary);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;;
 }
 

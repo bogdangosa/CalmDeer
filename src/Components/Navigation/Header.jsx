@@ -27,12 +27,13 @@ function Header() {
   }, []);
 
   return (
-    <header className={location.pathname=='/'&&scrollPosition==0?"Header HomeHeader":(location.pathname.slice(0,9)=='/OurWork/'&&scrollPosition==0?"Header ProjectHeader":"Header")}>
+    <header className={location.pathname=='/'&&scrollPosition==0?"Header HomeHeader":(location.pathname.slice(0,9)=='/Portfolio/'&&scrollPosition==0?"Header ProjectHeader":"Header")}>
         <div className='header-container'>
             <p className='logo' onClick={()=>navigate('/')}>CalmDeer</p>
             <ul className={HamburgerState?'nav-bar':'nav-bar nav-bar-hidden'}>
                 <NavLink to='/' className={({ isActive }) => isActive ? "nav-links-active nav-links" : "nav-links"} onClick={()=>setHamburgerState(false)}><p data-text="Home">Home</p></NavLink>
-                <NavLink to='/OurWork' className={({ isActive }) => isActive ? "nav-links-active nav-links" : "nav-links"} onClick={()=>setHamburgerState(false)}><p data-text="Our Work">Our Work</p></NavLink>
+                <NavLink to='/Portfolio' className={({ isActive }) => isActive ? "nav-links-active nav-links" : "nav-links"} onClick={()=>setHamburgerState(false)}><p data-text="Portfolio">Portfolio</p></NavLink>
+                <NavLink to='/Games' className={({ isActive }) => isActive ? "nav-links-active nav-links" : "nav-links"} onClick={()=>setHamburgerState(false)}><p data-text="Games">Games</p></NavLink>
                 <NavLink to='/News' className={({ isActive }) => isActive ? "nav-links-active nav-links" : "nav-links"} onClick={()=>setHamburgerState(false)}><p data-text="News">News</p></NavLink>
                 <NavLink to='/Contact' className='nav-contact-link' onClick={()=>setHamburgerState(false)}><RoundButton className="nav-contact-btn">Contact</RoundButton></NavLink>
             </ul>

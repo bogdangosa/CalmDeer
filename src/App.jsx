@@ -8,13 +8,15 @@ import NewsArticle from './Pages/NewsArticle'
 import OurWork from './Pages/OurWork'
 import ProjectPage from './Pages/ProjectPage'
 import RootLayout from './Pages/RootLayout'
+import Games from './Pages/Games'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout/>} >
       <Route index element={<Home/>}/>
-      <Route path='/OurWork' element={<OurWork/>}/>
-      <Route path='/OurWork/:projectid' element={<ProjectPage/>}/>
+      <Route path='/Games' element={<Games/>}/>
+      <Route path='/Portfolio' element={<OurWork/>}/>
+      <Route path='/Portfolio/:projectid' element={<ProjectPage/>}/>
       <Route path='/News' element={<News/>}/>
       <Route path='/News/:articleid' element={<NewsArticle/>}/>
       <Route path='/Contact' element={<Contact/>}/>
