@@ -1,6 +1,6 @@
 .Portfolio{
-    padding: 7rem 5rem 2rem 5rem;
-    width: 1440px;
+    padding: 7rem 4rem 2rem 4rem;
+    width: 1920px;
 }
 
 .portfolio_title{
@@ -92,7 +92,7 @@
     width: 70%;
     overflow: hidden;
     position: relative;
-    height: 30rem;
+    height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -119,7 +119,7 @@
 }
 .white-screen{
     width: 70%;
-    height: 30rem;
+    height: 40rem;
 }
 
 

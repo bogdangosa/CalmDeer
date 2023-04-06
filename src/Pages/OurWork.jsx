@@ -61,7 +61,7 @@ function OurWork() {
                     <motion.img src={SubcategoryArray[SelectedSubcategory].image} className='portfolio-subcategory-content-image'
                         key={SubcategoryArray[SelectedSubcategory].image}
                         initial={{ opacity: 0 , y:-100,height:"0",overflow:"hidden"}}
-                        animate={{ opacity: 1 , y:0,height:"30rem" , transition: {
+                        animate={{ opacity: 1 , y:0,height:"40rem" , transition: {
                           type: "tween",
                           duration: 0.8,
                           delay:0.3
@@ -72,7 +72,7 @@ function OurWork() {
                     <motion.div className='porfolio-subcategory-overlay'
                         key={SubcategoryArray[SelectedSubcategory].image}
                         initial={{ opacity: 0 , y:-100,height:"0",overflow:"hidden"}}
-                        animate={{ opacity: 1 , y:0,height:"30rem" , transition: {
+                        animate={{ opacity: 1 , y:0,height:"40rem" , transition: {
                             type: "tween",
                             duration: 0.8,
                             delay:0.3
