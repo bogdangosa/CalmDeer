@@ -97,7 +97,7 @@ function Home() {
             <p className='hero-text'>Fusce mattis finibus urna, eu dictum enim porttitor sed. Donec egestas eget quam eu ullamcorper. Praesent turpis libero, vestibulum ut faucibus nec, finibus sed quam. Fusce rutrum velit augue, eget placerat purus maximus eu.</p>
             
             <div className='hero-cta-buttons-container'>
-              <SimpleButton className="hero-cta-btn" onClick={()=>navigate('/OurWork')}>Our Work</SimpleButton>
+              <SimpleButton className="hero-cta-btn" onClick={()=>navigate('/Portfolio')}>Our Portfolio</SimpleButton>
               <SimpleButton className="hero-cta-btn-2" onClick={()=>navigate('/Contact')}>Get in Touch</SimpleButton>
             </div>
 
@@ -150,7 +150,7 @@ function Home() {
               <div className='work-image-swiper-pagination'></div>
               <motion.div
               initial={{ opacity: 0 , y:-100,height:"1rem",overflow:"hidden"}}
-                whileInView={{ opacity: 1 , y:0,height:"25rem" , transition: {
+                whileInView={{ opacity: 1 , y:0,height:"35rem" , transition: {
                   type: "tween",
                   duration: 0.8,
                   delay:0.7,
@@ -183,7 +183,7 @@ function Home() {
               }}}>
               <h2 className='home-subtitle'>What we do</h2>
               <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. Mauris viverra tincidunt risus et imperdiet. Pellentesque nec congue ipsum. Aenean pellentesque suscipit enim eu dapibus. Aliquam nec faucibus quam, id lobortis est.</p>
-              <ArrowButton onClick={()=>navigate('/OurWork')}>Find out more</ArrowButton>
+              <ArrowButton onClick={()=>navigate('/Portfolio')}>Find out more</ArrowButton>
             </motion.div>
         </div>
 
@@ -197,7 +197,7 @@ function Home() {
                 delay:0.5,
               }}}>
               <h2 className='home-subtitle'>How we work</h2>
-              <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. Mauris viverra tincidunt risus et imperdiet. Pellentesque nec congue ipsum. Aenean pellentesque suscipit enim eu dapibus. Aliquam nec faucibus quam, id lobortis est. Nulla at sapien quis mi accumsan blandit nec ut turpis. Nulla elementum rutrum purus sed dictum. Quisque imperdiet nulla eget eros sagittis vulputate.\nNullam porttitor, odio ac rhoncus hendrerit, dui lectus dignissim dui, eget varius ante risus quis diam. Nulla non turpis et eros vestibulum sagittis sit amet et eros. Morbi feugiat ligula velit, at varius felis imperdiet id. Nunc volutpat iaculis odio, eget ullamcorper justo malesuada quis. Sed bibendum sapien nisi, et dapibus est pharetra et. Ut bibendum mattis arcu eu venenatis. Nulla quis pharetra justo, a rhoncus sem.</p>
+              <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. Mauris viverra tincidunt risus et imperdiet. Pellentesque nec congue ipsum. Aenean pellentesque suscipit enim eu dapibus. <br/> <br/>Nullam porttitor, odio ac rhoncus hendrerit, dui lectus dignissim dui, eget varius ante risus quis diam. Nulla non turpis et eros vestibulum sagittis sit amet et eros. Morbi feugiat ligula velit, at varius felis imperdiet id. Nunc volutpat iaculis odio, eget ullamcorper justo malesuada quis. Sed bibendum sapien nisi, et dapibus est pharetra et. Ut bibendum mattis arcu eu venenatis. Nulla quis pharetra justo, a rhoncus sem.</p>
               <ArrowButton onClick={()=>navigate('/Contact')}>Work with us</ArrowButton>
             </motion.div>
             <motion.div className='home-work-image2'

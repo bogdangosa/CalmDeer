@@ -19,3 +19,16 @@
     gap: 1rem;
     grid-template-columns: 1fr 1fr;
 }
+
+
+@media screen and (max-width: 600px) {
+    
+    .game-card-container{
+        grid-template-columns: 1fr;
+    
+    }
+    .Games-background{
+        padding: 0 2rem;
+    }
+
+}

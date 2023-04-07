@@ -1,6 +1,6 @@
 .Home{
     padding: 0 5rem;
-    width: 1440px;
+    width: 1920px;
 }
 .home-subtitle{
     position: relative;
@@ -81,7 +81,7 @@
 
 .moving-hero-background{
     position: absolute;
-    width: 182%;
+    width: 182.3%;
     height: 100%;
     background: var(--color-text-primary);
     left: -100%;
@@ -178,22 +178,22 @@
 }
 
 .home-work-image-container{
-    width: 50%;
-    height: 25rem;
+    width: 60%;
+    height: 35rem;
     position: relative;
 }
 
 .home-work-image{
     width: 100%;
-    height: 25rem;
+    height: 35rem;
     object-fit: cover!important;
 }
 .red-rectangle-bg{
     position: absolute;
     left: -2rem;
     top: -2rem;
-    width: 40%;
-    height: 22rem;
+    width: 30%;
+    height: 30rem;
     background: var(--color-accent-primary);
 }
 .work-image-swiper-pagination{
@@ -284,6 +284,12 @@
     background-attachment: fixed;
 }
 
+@media screen and (max-width: 1920px) {
+    .Home{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .Home{
         padding: 0 2rem;
@@ -338,9 +344,20 @@
         height: 15rem;
     }
     
-    .home-work-image{
-        display: none;
+    .home-work-image-container{
+        width: 100%;
     }
+        
+    .home-work-image{
+        height: 17rem;
+    }
+
+
+    .red-rectangle-bg{
+        height: 20rem;
+    }
+
+
     .hero-cta-buttons-container{
         flex-direction: column;
     }

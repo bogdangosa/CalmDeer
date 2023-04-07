@@ -21,7 +21,7 @@ function GameCard({title,image,animation_delay,onClick,className}) {
   return (
     <motion.div
     initial="out"
-    whileInView="in"
+    animate="in"
     exit="out"
     variants={Variants}
     transition={Transition}>
