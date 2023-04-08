@@ -81,6 +81,7 @@ function Home() {
 
 
   return (
+    <div className='home-container'>
     <div className='Home'>
       <ScrollToTop/>
         <div className='hero-section'>
@@ -187,7 +188,7 @@ function Home() {
             </motion.div>
         </div>
 
-
+        {/*
         <div className='home-work-section home-how-we-work'>
             <motion.div className='home-work-text'
               initial={{ opacity: 0 , x:-100}}
@@ -210,6 +211,23 @@ function Home() {
               <img src='./image4.png'/>
             </motion.div>
         </div>
+            */}
+  </div>
+
+        <div className='home-work-section home-how-we-work'>
+          <div src='./image6.png' className='home-how-we-work-background-image'></div>
+          <div className='home-how-we-work-background-overlay'></div>
+
+          <h2 className='how-we-work-title'>How we work</h2>
+          <p className='how-we-work-text'>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. </p>
+          
+          <SimpleButton onClick={()=>navigate('/Contact')}>Work with us</SimpleButton>
+
+        </div>
+
+    <div className='Home'>
+
+
         
         <div className='home-partner-section'>
           <h2 className='home-subtitle'>Our Partners</h2>
@@ -239,6 +257,8 @@ function Home() {
               <SwiperSlide><img src="./partners_logo/ea_sports_logo.png"/></SwiperSlide>
             </Swiper>
         </div>
+
+      </div>
 
 
     </div>
