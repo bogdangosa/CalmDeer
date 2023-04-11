@@ -8,11 +8,11 @@ import SelectField from '../Components/formElements/SelectField';
 import Loading from '../Components/Auxiliary/Loading';
 
 function OurWork() {
-    const [Category,setCategory] = useState("Conceptual");
+    const [Category,setCategory] = useState("2D Production");
     const [SubcategoryArray,setSubcategoryArray] = useState([]);
     const [SelectedSubcategory,setSelectedSubcategory] = useState(0);
 
-    const category_options = new Array("Conceptual","2D Production","3D Production");
+    const category_options = new Array("2D Production","3D Production");
 
     const navigate = useNavigate();
 
@@ -20,12 +20,10 @@ function OurWork() {
         setSubcategoryArray([]);
         setSelectedSubcategory(0);
         setTimeout(()=>{
-            if(Category=="Conceptual")
-                setSubcategoryArray(new Array({title:"Concept Art",image:"./image6.png"},{title:"Casual Art",image:"./image5.png"},{title:"Slots Games Art",image:"./image1.png"},))
             if(Category=="2D Production")
-                setSubcategoryArray(new Array({title:"2D Art",image:"./image6.png"},{title:"2D Characters Design",image:"./image2.png"},{title:"2D Environment Design",image:"./image5.png"},{title:"Pixel art",image:"./image5.png"},{title:"Pixel animation",image:"./image5.png"},{title:"UI/UX Design",image:"./image6.png"},{title:"Frame by frame animation",image:"./image6.png"}));
+                setSubcategoryArray(new Array({title:"2D Art",image:"./image6.png"},{title:"2D Characters Design",image:"./image2.png"},{title:"2D Concept Art",image:"./image6.png"},{title:"2D Environment Design",image:"./image5.png"},{title:"Pixel art",image:"./image5.png"},{title:"Pixel animation",image:"./image5.png"},{title:"UI/UX Design",image:"./image6.png"},{title:"Frame by frame animation",image:"./image6.png"},{title:"Slots Games Art",image:"./image1.png"}));
             if(Category=="3D Production")
-                setSubcategoryArray(new Array({title:"3D Art",image:"./image2.png"},{title:"3D Characters Design",image:"./image4.png"},{title:"3D Environment Design",image:"./image1.png"},{title:"3D Game Modeling",image:"./image5.png"},{title:"3D Sculpting",image:"./image6.png"},{title:"3D Rigging",image:"./image5.png"}));
+                setSubcategoryArray(new Array({title:"3D Art",image:"./image2.png"},{title:"3D Characters Design",image:"./image4.png"},{title:"3D Concept Art",image:"./image6.png"},{title:"3D Environment Design",image:"./image1.png"},{title:"3D Game Modeling",image:"./image5.png"},{title:"3D Sculpting",image:"./image6.png"},{title:"3D Rigging",image:"./image5.png"}));
 
         },200)
 
@@ -49,7 +47,6 @@ function OurWork() {
         </motion.div>
         <div className='work_table_container'>
             <div className='category_menu'>
-                <p className={Category=="Conceptual"?'category_btn category_btn_active':'category_btn'} onClick={()=>setCategory("Conceptual")}>Conceptual</p>
                 <p className={Category=="2D Production"?'category_btn category_btn_active':'category_btn'} onClick={()=>setCategory("2D Production")}>2D Production</p>
                 <p className={Category=="3D Production"?'category_btn category_btn_active':'category_btn'} onClick={()=>setCategory("3D Production")}>3D Production</p>
             </div>
@@ -109,6 +106,9 @@ function OurWork() {
                             </motion.div>)
                     })}
                 </div>    
+            </div>
+            <div className='portfolio_image_galery'>
+                
             </div>
         </div>
     </div>
