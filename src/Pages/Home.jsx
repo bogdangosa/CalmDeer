@@ -200,8 +200,12 @@ function Home() {
             */}
   </div>
 
-        <div className='home-work-section home-how-we-work'>
-          <div src='./image6.png' className='home-how-we-work-background-image'></div>
+        <div className='home-work-section home-how-we-work'>endlessenginesfinale2.mov
+          <div src='./image6.png' className='home-how-we-work-background-image'>
+            <video autoPlay loop muted>
+                <source src='./endlessenginesfinale2.mov' type="video/mp4" loop muted></source>
+            </video>
+          </div>
           <div className='home-how-we-work-background-overlay'></div>
 
           <h2 className='how-we-work-title'>How we work</h2>
