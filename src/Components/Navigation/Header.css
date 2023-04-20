@@ -44,6 +44,10 @@
     font-weight: 500;
     cursor: pointer;
 }
+.home-logo{
+    color: var(--color-background);
+}
+
 .ProjectHeader .logo{
     color: var(--color-background)!important;
 }

@@ -91,24 +91,8 @@ function Home() {
               variants={HeroTitleVariants}
               transition={HeroTitleTransition}> Lorem <span className='accent'>ipsum dolor</span> consectetur adipiscing.</motion.h1>
 
-          <motion.div className='hero-text-container'
-              initial="out"animate="in"exit="out"
-              variants={HeroTextVariants}
-              transition={HeroTextTransition}> 
-            <p className='hero-text'>Fusce mattis finibus urna, eu dictum enim porttitor sed. Donec egestas eget quam eu ullamcorper. Praesent turpis libero, vestibulum ut faucibus nec, finibus sed quam. Fusce rutrum velit augue, eget placerat purus maximus eu.</p>
-            
-            <div className='hero-cta-buttons-container'>
-              <SimpleButton className="hero-cta-btn" onClick={()=>navigate('/Portfolio')}>Our Portfolio</SimpleButton>
-              <SimpleButton className="hero-cta-btn-2" onClick={()=>navigate('/Contact')}>Get in Touch</SimpleButton>
-            </div>
+          <SimpleButton>See Portfolio</SimpleButton>
 
-            <motion.div className='hero-background' initial="out"animate="in"exit="out"
-              variants={HeroTextBgVariants}
-              transition={HeroTextTransition} />
-
-            <div className='moving-hero-background'></div>
-
-          </motion.div>
           <motion.div className='hero-image-background'
               initial="out"
               animate="in"
@@ -116,7 +100,9 @@ function Home() {
               variants={HeroImageVariants}
               transition={HeroImageTransition}>
             <div className='hero-image-overlay'/>
-            <img src='./hero_image.png'></img>
+             <video autoPlay loop muted>
+              <source src='./mayinhara (1080p)_cut.mp4' type="video/mp4" loop muted></source>
+             </video>
           </motion.div>
         </div>
 

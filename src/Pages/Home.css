@@ -34,7 +34,7 @@
     right: 0;
     z-index: -1;
     height: 100vh;
-    width: 50vw;
+    width: 100vw;
     overflow: hidden;
     background: #3333334d;
 }
@@ -43,12 +43,18 @@
     top: 0;
     right: 0;
     height: 100vh;
-    width: 50vw;
+    width: 100vw;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .hero-image-background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-image-background video{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -59,16 +65,17 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-start;
+    align-items: center;
+    padding-bottom: 4rem;
 }
 
 .hero-title{
-    font-size: 4rem;
+    font-size: 2.5rem;
     line-height: 4.5rem;
-    width: 50%;
     margin-bottom: 2rem;
     position: relative;
-    z-index: -1;
+    z-index: 2;
+    color: var(--color-background);
 }
 
 .hero-text-container{
