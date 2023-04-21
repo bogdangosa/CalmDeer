@@ -10,6 +10,13 @@ import ProjectPage from './Pages/ProjectPage'
 import RootLayout from './Pages/RootLayout'
 import Games from './Pages/Games'
 
+import "./fonts/BebasNeue/Commercial/TTF/BebasNeue-Bold.ttf";
+import "./fonts/BebasNeue/Commercial/TTF/BebasNeue-Book.ttf";
+import "./fonts/BebasNeue/Commercial/TTF/BebasNeue-Light.ttf";
+import "./fonts/BebasNeue/Commercial/TTF/BebasNeue-Regular.ttf";
+import "./fonts/BebasNeue/Commercial/TTF/BebasNeue-Thin.ttf";
+
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout/>} >

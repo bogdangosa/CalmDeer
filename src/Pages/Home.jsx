@@ -89,9 +89,12 @@ function Home() {
           <motion.h1  className='hero-title'               
               initial="out"animate="in"exit="out"
               variants={HeroTitleVariants}
-              transition={HeroTitleTransition}> Lorem <span className='accent'>ipsum dolor</span> consectetur adipiscing.</motion.h1>
+              transition={HeroTitleTransition}> Lorem ipsum dolor consectetur adipiscing.</motion.h1>
 
-          <SimpleButton>See Portfolio</SimpleButton>
+          <div className='hero-buttons-container'>
+            <SimpleButton>See Portfolio</SimpleButton>
+            <SimpleButton>Work with us</SimpleButton>
+          </div>
 
           <motion.div className='hero-image-background'
               initial="out"

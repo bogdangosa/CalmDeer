@@ -1,0 +1,5 @@
+@font-face {
+    font-family: "Title-Font";   /*Can be any text*/
+    src: local("BebasNeue"),
+      url("./fonts/BebasNeue/Commercial/TTF/BebasNeue-Bold.ttf") format("truetype");
+}

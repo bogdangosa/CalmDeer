@@ -70,12 +70,13 @@
 }
 
 .hero-title{
-    font-size: 2.5rem;
+    font-size: 3rem;
     line-height: 4.5rem;
     margin-bottom: 2rem;
     position: relative;
     z-index: 2;
     color: var(--color-background);
+    font-family: "Title-font";
 }
 
 .hero-text-container{
@@ -106,6 +107,14 @@
     -moz-transition: 0.2s ease-in;
     -ms-transition: 0.2s ease-in;
     -o-transition: 0.2s ease-in;
+}
+
+.hero-buttons-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    height: auto;
+    width: 100%;
 }
 
 .hero-text-container:hover .moving-hero-background{
