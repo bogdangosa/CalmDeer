@@ -102,10 +102,38 @@ function Home() {
               exit="out"
               variants={HeroImageVariants}
               transition={HeroImageTransition}>
-            <div className='hero-image-overlay'/>
-             <video autoPlay loop muted>
-              <source src='./mayinhara (1080p)_cut.mp4' type="video/mp4" loop muted></source>
-             </video>
+            <Swiper 
+             spaceBetween={1}
+             slidesPerView={1}
+             loop={true}
+             autoplay={{
+              delay: 21000,
+              disableOnInteraction: false,
+              }}        
+              modules={[Autoplay]}>
+              <SwiperSlide>
+                <div className='hero-image-overlay'/>
+                <video autoPlay loop muted>
+                  <source src='./mayinhara (1080p)_cut.mp4' type="video/mp4" loop muted></source>
+                </video>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className='hero-image-overlay'/>
+                <video autoPlay loop muted>
+                  <source src='./project_revival.mp4' type="video/mp4" loop muted></source>
+                </video>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className='hero-image-overlay'/>
+                <video autoPlay loop muted>
+                  <source src='./video_playback.mp4' type="video/mp4" loop muted></source>
+                </video>
+              </SwiperSlide>
+
+
+            </Swiper>
           </motion.div>
         </div>
 
