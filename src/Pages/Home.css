@@ -68,8 +68,10 @@
     align-items: center;
     padding-bottom: 4rem;
 }
-.swiper{
+#hero-swiper{
+    height: 100%;
     max-width: 100vw!important;
+    padding-bottom: 0!important;
 }
 .hero-title{
     font-size: 3rem;

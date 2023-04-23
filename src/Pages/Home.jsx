@@ -63,7 +63,7 @@ function Home() {
     },
     out: {
         opacity: 0,
-        y: "20vh",
+        y: "5vh",
     },
   }
 
@@ -92,8 +92,8 @@ function Home() {
               transition={HeroTitleTransition}> Lorem ipsum dolor consectetur adipiscing.</motion.h1>
 
           <div className='hero-buttons-container'>
-            <SimpleButton>See Portfolio</SimpleButton>
-            <SimpleButton>Work with us</SimpleButton>
+            <SimpleButton onClick={()=>navigate("/Portfolio")}>See Portfolio</SimpleButton>
+            <SimpleButton onClick={()=>navigate("/Contact")}>Work with us</SimpleButton>
           </div>
 
           <motion.div className='hero-image-background'
@@ -102,7 +102,7 @@ function Home() {
               exit="out"
               variants={HeroImageVariants}
               transition={HeroImageTransition}>
-            <Swiper 
+            <Swiper id='hero-swiper'
              spaceBetween={1}
              slidesPerView={1}
              loop={true}
