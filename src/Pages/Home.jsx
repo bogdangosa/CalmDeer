@@ -114,7 +114,7 @@ function Home() {
               <SwiperSlide>
                 <div className='hero-image-overlay'/>
                 <video autoPlay loop muted>
-                  <source src='./mayinhara (1080p)_cut.mp4' type="video/mp4" loop muted></source>
+                  <source src='./mayinhara.mp4' type="video/mp4" loop muted></source>
                 </video>
               </SwiperSlide>
 
