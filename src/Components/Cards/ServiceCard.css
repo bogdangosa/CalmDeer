@@ -1,0 +1,10 @@
+.service_card_title{
+    margin-bottom: 1rem;
+    color: var(--color-text-primary);
+    font-size: 1.8rem;
+}
+
+.service_card_description{
+    color: var(--color-text-secondary);
+    line-height: 1.5rem;
+}

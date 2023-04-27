@@ -230,8 +230,33 @@ function Home() {
         </div>
             */}
   </div>
+        <div className='home-services-section'>
+          <h2 className='home-subtitle'>Our Services</h2>
 
-        <div className='home-work-section home-how-we-work'>endlessenginesfinale2.mov
+          <div className='service-type-container'>
+            <div className='service-type-text'>
+              <h3>2D Art</h3>
+              <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. </p> 
+              <SimpleButton className="black-btn" onClick={()=>navigate("/Services/2D-Art")}>See More</SimpleButton>
+            </div>
+            <img src="./hero_image.png"/>
+
+          </div>
+
+          <div className='service-type-container'>
+            <img src="./image6.png"/>
+            <div className='service-type-text service-type-text-reverse'>
+              <h3>3D Art</h3>
+              <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. </p> 
+              <SimpleButton className="black-btn" onClick={()=>navigate("/Services/3D-Art")}>See More</SimpleButton>
+            </div>
+
+          </div>
+            
+        </div>
+
+
+        <div className='home-work-section home-how-we-work'>
           <div src='./image6.png' className='home-how-we-work-background-image'>
             <video autoPlay loop muted>
                 <source src='./endlessenginesfinale2.mov' type="video/mp4" loop muted></source>

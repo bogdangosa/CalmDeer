@@ -88,10 +88,10 @@
 }
 
 
-.contact-btn:hover, .contact-btn::before{
+.black-btn:hover, .black-btn::before{
     background: var(--color-text-primary);
 }
-.contact-btn span:first-child {
+.black-btn span:first-child {
     color: var(--color-background);
 }
 

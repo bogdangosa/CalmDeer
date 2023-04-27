@@ -16,6 +16,9 @@ function Header() {
     const position = window.pageYOffset;
     setScrollPosition(position);
   };
+  useEffect(()=>{
+    console.log(location.pathname.slice(0,10));
+  },[])
 
 
   useEffect(() => {
@@ -27,9 +30,9 @@ function Header() {
   }, []);
 
   return (
-    <header className={location.pathname=='/'&&scrollPosition==0?"Header HomeHeader":(location.pathname.slice(0,9)=='/Portfolio/'&&scrollPosition==0?"Header ProjectHeader":"Header")}>
+    <header className={location.pathname=='/'&&scrollPosition==0?"Header HomeHeader":(location.pathname.slice(0,11)=='/Portfolio/'&&scrollPosition==0?"Header HomeHeader":(location.pathname.slice(0,10)=='/Services/'&&scrollPosition==0?"Header HomeHeader":"Header"))}>
         <div className='header-container'>
-            <p className={location.pathname=='/'&&scrollPosition==0?'logo home-logo':'logo'} onClick={()=>navigate('/')}>CalmDeer</p>
+            <p className={location.pathname=='/'&&scrollPosition==0?'logo home-logo':(location.pathname.slice(0,10)=='/Services/'&&scrollPosition==0?"logo home-logo":"logo")} onClick={()=>navigate('/')}>CalmDeer</p>
             <ul className={HamburgerState?'nav-bar':'nav-bar nav-bar-hidden'}>
                 <NavLink to='/' className={({ isActive }) => isActive ? "nav-links-active nav-links" : "nav-links"} onClick={()=>setHamburgerState(false)}><p data-text="Home">Home</p></NavLink>
                 <NavLink to='/Portfolio' className={({ isActive }) => isActive ? "nav-links-active nav-links" : "nav-links"} onClick={()=>setHamburgerState(false)}><p data-text="Portfolio">Portfolio</p></NavLink>

@@ -15,6 +15,7 @@ import "./fonts/BebasNeue/Commercial/TTF/BebasNeue-Book.ttf";
 import "./fonts/BebasNeue/Commercial/TTF/BebasNeue-Light.ttf";
 import "./fonts/BebasNeue/Commercial/TTF/BebasNeue-Regular.ttf";
 import "./fonts/BebasNeue/Commercial/TTF/BebasNeue-Thin.ttf";
+import Services from './Pages/Services'
 
 
 const router = createBrowserRouter(
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
       <Route path='/Games' element={<Games/>}/>
       <Route path='/Portfolio' element={<OurWork/>}/>
       <Route path='/Portfolio/:projectid' element={<ProjectPage/>}/>
+      <Route path='/Services/:serviceid' element={<Services/>}/>
       <Route path='/News' element={<News/>}/>
       <Route path='/News/:articleid' element={<NewsArticle/>}/>
       <Route path='/Contact' element={<Contact/>}/>

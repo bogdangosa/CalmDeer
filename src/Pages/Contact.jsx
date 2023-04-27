@@ -52,7 +52,7 @@ function Contact() {
             <TextInput name="title"  type="text" placeholder="Title" value={Title} setValue={(name)=>setTitle(name)}/>
             <TextInput name="message" type="text" placeholder="Your Message" value={Message} setValue={(message)=>setMessage(message)}/>
             <div className='contact-form-container'>
-              <SimpleButton className="contact-btn" onClick={()=>sendEmail()}>Send</SimpleButton>
+              <SimpleButton className="black-btn" onClick={()=>sendEmail()}>Send</SimpleButton>
               {SuccesText?<p className='succes-text'>Your email was sent succesfully!</p>:<></>}
               {ErrorText?<p className='error-text'>Please fill all the fields before submiting!</p>:<></>}
             </div>
