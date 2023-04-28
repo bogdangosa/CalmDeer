@@ -54,9 +54,24 @@
 
 
 @media screen and (max-width: 700px) {
-
+    .hero-services{
+        padding: 5rem 2rem;
+    }
+    
+    .hero-services h1{
+        font-size:3rem;
+    }
+    .services-info-container{
+        padding: 2rem;
+    }
     .services-grid-container{
         grid-template-columns: 1fr;
     }
-
+    
+    .hero-services p{
+        width: 100%;
+    }
+    .services-subtitle{
+        font-size: 2rem;
+    }
 }

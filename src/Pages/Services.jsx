@@ -38,7 +38,7 @@ function Services() {
             <SimpleButton onClick={()=>navigate("/Contact")}>Work with us</SimpleButton>
         </div>
         <div className='services-info-container'>
-          <h2 className='home-subtitle'>Our {ServiceTitle} Services</h2>
+          <h2 className='home-subtitle services-subtitle'>Our {ServiceTitle} Services</h2>
           <div className='services-grid-container'>
             <ServiceCard title="Characters" description="Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus." />
             <ServiceCard title="Enviroments" description="Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus." />
