@@ -517,4 +517,20 @@
     .home-services-section{
         padding: 2rem;
     }
+
+    .service-type-container{
+        flex-direction: column;
+        height: auto;
+    }
+    .service-type-text p{
+        line-height: 1.5rem;
+    }
+    .service-type-container img{
+        height: 14rem;
+        width: 100%;
+        flex: auto;
+    }
+    .service-type-container-reverse{
+        flex-direction: column-reverse;
+    }
 }

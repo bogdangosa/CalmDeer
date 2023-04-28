@@ -1,5 +1,10 @@
-.service_card_title{
+.service_card_title_container{
+    display: flex;
+    gap: 1rem;
     margin-bottom: 1rem;
+    align-items: center;
+}
+.service_card_title{
     color: var(--color-text-primary);
     font-size: 1.8rem;
 }
@@ -7,4 +12,17 @@
 .service_card_description{
     color: var(--color-text-secondary);
     line-height: 1.5rem;
+}
+
+.service_card_icon{
+    display: flex;
+    padding: 0.4rem;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--color-accent-primary);
+}
+.service_card_icon img{
+    
 }

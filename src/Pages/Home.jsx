@@ -243,7 +243,7 @@ function Home() {
 
           </div>
 
-          <div className='service-type-container'>
+          <div className='service-type-container service-type-container-reverse'>
             <img src="./image6.png"/>
             <div className='service-type-text service-type-text-reverse'>
               <h3>3D Art</h3>
@@ -259,7 +259,7 @@ function Home() {
         <div className='home-work-section home-how-we-work'>
           <div src='./image6.png' className='home-how-we-work-background-image'>
             <video autoPlay loop muted>
-                <source src='./endlessenginesfinale2.mov' type="video/mp4" loop muted></source>
+                <source src='./endlessenginesfinale2.mp4' type="video/mp4" loop muted></source>
             </video>
           </div>
           <div className='home-how-we-work-background-overlay'></div>
