@@ -1,5 +1,4 @@
 .Portfolio{
-    padding: 7rem 4rem 2rem 4rem;
     width: 1920px;
 }
 
@@ -170,6 +169,36 @@
 }
 
 
+.portfolio-categories{
+    margin-top: 5rem;
+}
+.hero-portfolio{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 8rem 5rem;
+    gap: 1rem;
+    color: var(--color-background);
+}
+.hero-portfolio p{
+    width: 70%;
+    line-height: 1.6rem;
+}
+.hero-portfolio h1{
+    font-size: 4rem;
+}
+
+.hero-buttons-container-portfolio{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    height: auto;
+    width: 100%;
+}
+
 
 
 
@@ -233,4 +262,15 @@
     .portfolio-subcategory-menu{
         display: none;
     }
+
+    .hero-portfolio{
+        padding: 5rem 2rem;
+    }
+    .hero-portfolio p{
+        width: 100%;
+    }
+    .hero-portfolio h1{
+        font-size: 3rem;
+    }
 }
+

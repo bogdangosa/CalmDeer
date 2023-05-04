@@ -1,25 +1,30 @@
 import './Services.css';
 import ScrollToTop from '../Components/Auxiliary/ScrolltoTop';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import SimpleButton from '../Components/Buttons/SimpleButton';
 import ServiceCard from '../Components/Cards/ServiceCard';
 import { useEffect, useState } from 'react';
 function Services() {
   const [ServiceTitle,setServiceTitle] = useState("Loading");
   const [ServiceImage,setServiceImage] = useState("");
+  const [SubcategoryArray,setSubcategoryArray] = useState([]);
   let {serviceid} = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(()=>{
     console.log(serviceid);
       if(serviceid!=null){
         if(serviceid=="2D-Art"){
           setServiceTitle("2D Art");
+          setSubcategoryArray(new Array({title:"2D Characters Design",image:"./image2.png",icon:"../icon_person.svg"},{title:"2D Concept Art",image:"./image6.png",icon:"../icon_person.svg"},{title:"2D Environment Design",image:"./image5.png",icon:"../icon_landscape.svg"},{title:"Pixel art",image:"./image5.png",icon:"../icon_person.svg"},{title:"Pixel animation",image:"./image5.png",icon:"../icon_person.svg"},{title:"UI/UX Design",image:"./image6.png",icon:"../icon_person.svg"},{title:"Frame by frame animation",image:"./image6.png",icon:"../icon_person.svg"},{title:"Slots Games Art",image:"./image1.png",icon:"../icon_person.svg"}));
           setServiceImage("../hero_image.png")
         }
         else{
           setServiceTitle("3D Art");
           setServiceImage("../image5.png")
+          setSubcategoryArray(new Array({title:"3D Characters Design",image:"./image4.png",icon:"../icon_person.svg"},{title:"3D Concept Art",image:"./image6.png",icon:"../icon_person.svg"},{title:"3D Environment Design",image:"./image1.png",icon:"../icon_landscape.svg"},{title:"3D Game Modeling",image:"./image5.png",icon:"../icon_bullets.svg"},{title:"3D Sculpting",image:"./image6.png",icon:"../icon_person.svg"},{title:"3D Rigging",image:"./image5.png",icon:"../icon_person.svg"}));
+
         }
 
       }
@@ -40,12 +45,9 @@ function Services() {
         <div className='services-info-container'>
           <h2 className='home-subtitle services-subtitle'>Our {ServiceTitle} Services</h2>
           <div className='services-grid-container'>
-            <ServiceCard icon="../icon_person.svg" title="Characters" description="Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus." />
-            <ServiceCard icon="../icon_landscape.svg"  title="Enviroments" description="Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus." />
-            <ServiceCard icon="../icon_light.svg"  title="Concept" description="Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus." />
-            <ServiceCard icon="../icon_bullets.svg"  title="Weapons" description="Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus." />
-            <ServiceCard icon="../icon_person.svg"  title="Illustrations" description="Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus." />
-          
+            {SubcategoryArray.map((subcategory,index)=>{
+              return (<ServiceCard onClick={()=>navigate(`${location.pathname}/${subcategory.title}`)} key={index} icon={subcategory.icon} title={subcategory.title} description="Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus." />)
+            })}
           </div>
         </div>
         

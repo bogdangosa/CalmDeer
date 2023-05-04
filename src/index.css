@@ -19,6 +19,7 @@
 body{
   width: 100vw;
   overflow-x: hidden;
+  background-color: var(--color-background-secondary);
 }
 
 p::selection, h1::selection, span::selection , h3::selection{

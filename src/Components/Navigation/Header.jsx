@@ -6,6 +6,7 @@ import { useLocation } from 'react-router-dom';
 
 function Header() {
   const [HamburgerState,setHamburgerState] = useState(false);
+  const [HeaderState,setHeaderState] = useState(true);
   let location = useLocation();
   const navigate = useNavigate();
 
@@ -17,8 +18,12 @@ function Header() {
     setScrollPosition(position);
   };
   useEffect(()=>{
-    console.log(location.pathname.slice(0,10));
-  },[])
+    if(scrollPosition==0 && (location.pathname=='/' || location.pathname.slice(0,10)=='/Portfolio' ||location.pathname.slice(0,10)=='/Services/'))
+      setHeaderState(true);
+    else 
+      setHeaderState(false);
+
+  },[scrollPosition,location.pathname])
 
 
   useEffect(() => {
@@ -30,9 +35,9 @@ function Header() {
   }, []);
 
   return (
-    <header className={location.pathname=='/'&&scrollPosition==0?"Header HomeHeader":(location.pathname.slice(0,11)=='/Portfolio/'&&scrollPosition==0?"Header HomeHeader":(location.pathname.slice(0,10)=='/Services/'&&scrollPosition==0?"Header HomeHeader":"Header"))}>
+    <header className={HeaderState?"Header HomeHeader":"Header"}>
         <div className='header-container'>
-            <p className={location.pathname=='/'&&scrollPosition==0?'logo home-logo':(location.pathname.slice(0,10)=='/Services/'&&scrollPosition==0?"logo home-logo":"logo")} onClick={()=>navigate('/')}>CalmDeer</p>
+            <p className={HeaderState?"logo home-logo":"logo"} onClick={()=>navigate('/')}>CalmDeer</p>
             <ul className={HamburgerState?'nav-bar':'nav-bar nav-bar-hidden'}>
                 <NavLink to='/' className={({ isActive }) => isActive ? "nav-links-active nav-links" : "nav-links"} onClick={()=>setHamburgerState(false)}><p data-text="Home">Home</p></NavLink>
                 <NavLink to='/Portfolio' className={({ isActive }) => isActive ? "nav-links-active nav-links" : "nav-links"} onClick={()=>setHamburgerState(false)}><p data-text="Portfolio">Portfolio</p></NavLink>

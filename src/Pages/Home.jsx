@@ -230,14 +230,14 @@ function Home() {
         </div>
             */}
   </div>
-        <div className='home-services-section'>
-          <h2 className='home-subtitle'>Our Services</h2>
+        <div className='home-portfolio-section'>
+          <h2 className='home-subtitle'>Our Portfolio</h2>
 
           <div className='service-type-container'>
             <div className='service-type-text'>
               <h3>2D Art</h3>
               <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. </p> 
-              <SimpleButton className="black-btn" onClick={()=>navigate("/Services/2D-Art")}>See More</SimpleButton>
+              <SimpleButton className="black-btn" onClick={()=>navigate("/Portfolio/2D-Art")}>See More</SimpleButton>
             </div>
             <img src="./hero_image.png"/>
 
@@ -248,7 +248,7 @@ function Home() {
             <div className='service-type-text service-type-text-reverse'>
               <h3>3D Art</h3>
               <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. </p> 
-              <SimpleButton className="black-btn" onClick={()=>navigate("/Services/3D-Art")}>See More</SimpleButton>
+              <SimpleButton className="black-btn" onClick={()=>navigate("/Portfolio/3D-Art")}>See More</SimpleButton>
             </div>
 
           </div>
