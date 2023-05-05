@@ -11,11 +11,13 @@ import SimpleButton from '../Components/Buttons/SimpleButton';
 function OurWork() {
     const navigate = useNavigate();
   return (
+    <>   
+    
+    <img src='./hero2_image.png' className='hero-services-image'/>
+    <div className='hero-services-overlay'/>
     <div className='Portfolio'>
         <ScrollToTop/>
         <div className='hero-portfolio'>
-            <img src='./hero2_image.png' className='hero-services-image'/>
-            <div className='hero-services-overlay'/>
             <h1>Discover our amazing portfolio</h1>
             <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
             
@@ -24,30 +26,11 @@ function OurWork() {
                 <SimpleButton onClick={()=>navigate("/Portfolio/3D-Art")}>3D Art</SimpleButton>
             </div>
         </div>
-        <div className='home-portfolio-section portfolio-categories'>
-
-          <div className='service-type-container'>
-            <div className='service-type-text'>
-              <h3>2D Art</h3>
-              <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. </p> 
-              <SimpleButton className="black-btn" onClick={()=>navigate("/Portfolio/2D-Art")}>See More</SimpleButton>
-            </div>
-            <img src="./hero_image.png"/>
-
-          </div>
-
-          <div className='service-type-container service-type-container-reverse'>
-            <img src="./image6.png"/>
-            <div className='service-type-text service-type-text-reverse'>
-              <h3>3D Art</h3>
-              <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. </p> 
-              <SimpleButton className="black-btn" onClick={()=>navigate("/Portfolio/3D-Art")}>See More</SimpleButton>
-            </div>
-
-          </div>
-            
-        </div>
+        
     </div>
+
+    </>
+
   )
 }
 

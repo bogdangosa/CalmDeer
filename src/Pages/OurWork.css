@@ -231,9 +231,6 @@
 
 
 @media screen and (max-width: 600px) {
-    .Portfolio{
-        padding: 7rem 2rem 2rem 2rem;
-    }
     .work_table{
         grid-template-columns: 1fr;
     }
