@@ -19,7 +19,7 @@ function OurWork() {
         <ScrollToTop/>
         <div className='hero-portfolio'>
             <h1>Discover our amazing portfolio</h1>
-            <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <p>Etiam dapibus est quis lacus eleifend volutpat. Fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
             
             <div className='hero-buttons-container-portfolio'>
                 <SimpleButton onClick={()=>navigate("/Portfolio/2D-Art")}>2D Art</SimpleButton>
