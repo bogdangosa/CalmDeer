@@ -183,10 +183,10 @@ function Home() {
                   }}
                   loop={true}
                   pagination={{ clickable: true,el: '.work-image-swiper-pagination' }}>
-                    <SwiperSlide><img src='./image6.png' className='home-work-image'/></SwiperSlide>
-                    <SwiperSlide><img src='./image5.png' className='home-work-image'/></SwiperSlide>
-                    <SwiperSlide><img src='./image4.png' className='home-work-image'/></SwiperSlide>
-                    <SwiperSlide><img src='./image3.png' className='home-work-image'/></SwiperSlide>
+                    <SwiperSlide><img src='./3D/Characters/ch1.jpg' className='home-work-image'/></SwiperSlide>
+                    <SwiperSlide><img src='./3D/Characters/ch2.png' className='home-work-image'/></SwiperSlide>
+                    <SwiperSlide><img src='./3D/Characters/ch4.png' className='home-work-image'/></SwiperSlide>
+                    <SwiperSlide><img src='./3D/Models/model2.png' className='home-work-image'/></SwiperSlide>
 
                 </Swiper>
               </motion.div>

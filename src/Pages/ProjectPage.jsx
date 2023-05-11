@@ -1,26 +1,66 @@
 import { useParams } from 'react-router-dom';
 import ScrollToTop from '../Components/Auxiliary/ScrolltoTop';
 import './ProjectPage.css';
+import {categories_3d} from '../Utils/ProjectPageTree'
+import { useEffect, useState } from 'react';
+import ImagePopUp from '../PopUp/ImagePopUp';
 
 function ProjectPage() {
+    const [Videos,setVideos] = useState([]);
+    const [Images,setImages] = useState([]);
+    const [SelectedImage,setSelectedImage] = useState(undefined);
+    const [HeroImage,SetHeroImage] = useState("/hero1_image.png");
     let {projectid} = useParams();
+
+    useEffect(()=>{
+        console.log(projectid);
+        switch(projectid){
+            case "3D Visual effects":
+                setVideos(categories_3d.vfx.videos);
+                SetHeroImage(categories_3d.vfx.hero);
+                break;
+            case "3D Characters Design":
+                setImages(categories_3d.characters.images);
+                SetHeroImage(categories_3d.characters.hero);
+                break;
+            case "3D Game Modeling":
+                setImages(categories_3d.models.images);
+                SetHeroImage(categories_3d.models.hero);
+                break;
+            case "3D Environment Design":
+                setVideos(categories_3d.enviroments.videos);
+                SetHeroImage(categories_3d.enviroments.hero);
+                break;
+        }
+
+    })
 
   return (
     <div className='project-container'>
         <div className='cover-image-overlay'/>
         <ScrollToTop/>
-        <img className='cover-image-project' src='/image1.png'></img>
+        <img className='cover-image-project' src={HeroImage}></img>
         <div className='ProjectPage'>
             <p className='project-title'>{projectid}</p>
-            <p className='project-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet neque in lectus elementum, id maximus orci sodales. Integer faucibus venenatis massa ut pulvinar. Mauris facilisis nisl sit amet tristique posuere. Mauris egestas dui in augue semper ultricies. Donec a pharetra justo, nec venenatis mauris. Vivamus tempus sem vulputate nisi lobortis tincidunt. Suspendisse potenti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula tellus ut lectus pharetra tempor. Donec nunc dui, aliquet in vestibulum ornare, imperdiet vel enim. Donec vel neque nec mi efficitur porta ut a tellus. Ut at mollis erat. Ut nunc sem, vestibulum in tortor pretium, pellentesque mattis arcu. Suspendisse vehicula iaculis magna. Praesent vel dictum metus. Donec ut felis sit amet erat laoreet placerat vel eget ex. Suspendisse massa velit, pretium ac scelerisque nec, sagittis sed urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per </p>
             <div className='project-image-galery'>
-                
-                <img className='project-image' src='/image2.png'></img>
-                <img className='project-image' src='/image3.png'></img>
-                <img className='project-image' src='/image2.png'></img>
-                <img className='project-image' src='/image1.png'></img>
+
+                {
+                    Videos.map((video,index)=>{
+                        return (
+                        <video autoPlay loop muted className='project-image' key={index}>
+                            <source src={video} type="video/mp4" loop muted></source>
+                        </video>);
+                    })
+                }
+                {
+                    Images.map((image,index)=>{
+                        return (
+                            <img className='project-image' src={image} key={index} onClick={()=>setSelectedImage(image)}></img>);
+                    })
+                }
             </div>
         </div>
+        {SelectedImage!=undefined && <ImagePopUp image={SelectedImage} close={()=>setSelectedImage(undefined)}/>}
     </div>)
 }
 export default ProjectPage; 

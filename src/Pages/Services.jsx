@@ -23,7 +23,7 @@ function Services() {
         else{
           setServiceTitle("3D Art");
           setServiceImage("../image5.png")
-          setSubcategoryArray(new Array({title:"3D Characters Design",image:"./image4.png",icon:"../icon_person.svg"},{title:"3D Concept Art",image:"./image6.png",icon:"../icon_person.svg"},{title:"3D Environment Design",image:"./image1.png",icon:"../icon_landscape.svg"},{title:"3D Game Modeling",image:"./image5.png",icon:"../icon_bullets.svg"},{title:"3D Sculpting",image:"./image6.png",icon:"../icon_person.svg"},{title:"3D Rigging",image:"./image5.png",icon:"../icon_person.svg"}));
+          setSubcategoryArray(new Array({title:"3D Characters Design",image:"./image4.png",icon:"../icon_person.svg"},{title:"3D Visual effects",image:"./image6.png",icon:"../icon_person.svg"},{title:"3D Environment Design",image:"./image1.png",icon:"../icon_landscape.svg"},{title:"3D Game Modeling",image:"./image5.png",icon:"../icon_bullets.svg"}));
 
         }
 
