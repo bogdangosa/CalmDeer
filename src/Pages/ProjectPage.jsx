@@ -4,11 +4,13 @@ import './ProjectPage.css';
 import {categories_3d} from '../Utils/ProjectPageTree'
 import { useEffect, useState } from 'react';
 import ImagePopUp from '../PopUp/ImagePopUp';
+import VideoPopUp from '../PopUp/VideoPopUp';
 
 function ProjectPage() {
     const [Videos,setVideos] = useState([]);
     const [Images,setImages] = useState([]);
     const [SelectedImage,setSelectedImage] = useState(undefined);
+    const [SelectedVideo,setSelectedVideo] = useState(undefined);
     const [HeroImage,SetHeroImage] = useState("/hero1_image.png");
     let {projectid} = useParams();
 
@@ -21,6 +23,7 @@ function ProjectPage() {
                 break;
             case "3D Characters Design":
                 setImages(categories_3d.characters.images);
+                setVideos(categories_3d.characters.videos);
                 SetHeroImage(categories_3d.characters.hero);
                 break;
             case "3D Game Modeling":
@@ -53,7 +56,7 @@ function ProjectPage() {
                 {
                     Videos.map((video,index)=>{
                         return (
-                        <video autoPlay loop muted className='project-image' key={index}>
+                        <video autoPlay loop muted className='project-image' key={index} onClick={()=>setSelectedVideo(video)}>
                             <source src={video} type="video/mp4" loop muted></source>
                         </video>);
                     })
@@ -67,6 +70,7 @@ function ProjectPage() {
             </div>
         </div>
         {SelectedImage!=undefined && <ImagePopUp image={SelectedImage} close={()=>setSelectedImage(undefined)}/>}
+        {SelectedVideo!=undefined && <VideoPopUp video={SelectedVideo} close={()=>setSelectedVideo(undefined)}/>}
     </div>)
 }
 export default ProjectPage; 

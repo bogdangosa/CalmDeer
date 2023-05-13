@@ -66,9 +66,17 @@
 
 @media screen and (max-width: 1440px) {
     .ProjectPage{
-        padding: 12rem 2rem 3rem 2rem;
+        padding: 22rem 2rem 3rem 2rem;
     }
     .project-title{
         font-size: 3rem;
+    }
+    
+    .cover-image-project{
+        height: 34rem;
+    }
+    
+    .cover-image-overlay{
+        height: 34rem;
     }
 }
