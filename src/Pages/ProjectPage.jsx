@@ -29,7 +29,13 @@ function ProjectPage() {
                 break;
             case "3D Environment Design":
                 setVideos(categories_3d.enviroments.videos);
+                setImages(categories_3d.enviroments.images);
                 SetHeroImage(categories_3d.enviroments.hero);
+                break;
+            case "3D Animation":
+                setVideos(categories_3d.animation.videos);
+                setImages(categories_3d.animation.images);
+                SetHeroImage(categories_3d.animation.hero);
                 break;
         }
 

@@ -121,14 +121,14 @@ function Home() {
               <SwiperSlide>
                 <div className='hero-image-overlay'/>
                 <video autoPlay loop muted>
-                  <source src='./project_revival.mp4' type="video/mp4" loop muted></source>
+                  <source src='./3D/ENV/env1.mp4' type="video/mp4" loop muted></source>
                 </video>
               </SwiperSlide>
 
               <SwiperSlide>
                 <div className='hero-image-overlay'/>
                 <video autoPlay loop muted>
-                  <source src='./video_playback.mp4' type="video/mp4" loop muted></source>
+                  <source src='./3D/ENV/env2.mp4' type="video/mp4" loop muted></source>
                 </video>
               </SwiperSlide>
 
@@ -184,7 +184,8 @@ function Home() {
                   loop={true}
                   pagination={{ clickable: true,el: '.work-image-swiper-pagination' }}>
                     <SwiperSlide><img src='./3D/Characters/ch1.jpg' className='home-work-image'/></SwiperSlide>
-                    <SwiperSlide><img src='./3D/Characters/ch2.png' className='home-work-image'/></SwiperSlide>
+                    <SwiperSlide><img src='./3D/Characters/ch9.jpg' className='home-work-image'/></SwiperSlide>
+                    <SwiperSlide><img src='./3D/Characters/ch10.jpg' className='home-work-image'/></SwiperSlide>
                     <SwiperSlide><img src='./3D/Characters/ch4.png' className='home-work-image'/></SwiperSlide>
                     <SwiperSlide><img src='./3D/Models/model2.png' className='home-work-image'/></SwiperSlide>
 
@@ -244,7 +245,7 @@ function Home() {
           </div>
 
           <div className='service-type-container service-type-container-reverse'>
-            <img src="./image6.png"/>
+            <img src="./3D/Characters/ch5.png"/>
             <div className='service-type-text service-type-text-reverse'>
               <h3>3D Art</h3>
               <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. </p> 

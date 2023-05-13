@@ -22,9 +22,8 @@ function Services() {
         }
         else{
           setServiceTitle("3D Art");
-          setServiceImage("../image5.png")
-          setSubcategoryArray(new Array({title:"3D Characters Design",image:"./image4.png",icon:"../icon_person.svg"},{title:"3D Visual effects",image:"./image6.png",icon:"../icon_person.svg"},{title:"3D Environment Design",image:"./image1.png",icon:"../icon_landscape.svg"},{title:"3D Game Modeling",image:"./image5.png",icon:"../icon_bullets.svg"}));
-
+          setServiceImage("/3D/Characters/ch10.jpg")
+          setSubcategoryArray(new Array({title:"3D Characters Design",image:"./image4.png",icon:"../icon_person.svg"},{title:"3D Environment Design",image:"./image1.png",icon:"../icon_landscape.svg"},{title:"3D Visual effects",image:"./image6.png",icon:"../icon_person.svg"},{title:"3D Game Modeling",image:"./image5.png",icon:"../icon_bullets.svg"},{title:"3D Animation",image:"./image5.png",icon:"../icon_person.svg"}));
         }
 
       }

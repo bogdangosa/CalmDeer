@@ -13,7 +13,7 @@ function OurWork() {
   return (
     <>   
     
-    <img src='./hero2_image.png' className='hero-services-image'/>
+    <img src='./3D/Characters/ch7.jpg' className='hero-services-image'/>
     <div className='hero-services-overlay'/>
     <div className='Portfolio'>
         <ScrollToTop/>
