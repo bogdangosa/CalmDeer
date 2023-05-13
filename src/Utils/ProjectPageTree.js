@@ -5,7 +5,7 @@ export const categories_3d = {
         images: []
     },
     characters:{
-        hero: "/3D/Characters/ch8.jpg",
+        hero: "/3D/Characters/ch11.jpg",
         videos: ["/3D/Characters/ch1.mp4","/3D/Characters/ch2.mp4"],
         images: ["/3D/Characters/ch1.jpg","/3D/Characters/ch10.jpg","/3D/Characters/ch8.jpg","/3D/Characters/ch6.png","/3D/Characters/ch7.jpg","/3D/Characters/ch2.png","/3D/Characters/ch3.png","/3D/Characters/ch4.png","/3D/Characters/ch5.png","/3D/Characters/ch9.jpg"],
     },

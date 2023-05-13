@@ -10,8 +10,8 @@ function Games() {
       <div className='Games'>
         <h2 className='home-subtitle'>Games we've worked on</h2>
         <div className='game-card-container'>
-        <GameCard title="Game Name" image="./image1.png" animation_delay={1}/>
-        <GameCard title="Another Game Name" image="./image6.png" animation_delay={2}/>
+        <GameCard title="Heroes Chained" image="./3D/Characters/ch11.jpg" animation_delay={1}/>
+        <GameCard title="Another Game Name" image="./3D/Characters/ch10.jpg" animation_delay={2}/>
         <GameCard title="Interesting Game" image="./image3.png" animation_delay={3}/>
         <GameCard title="Custom Game" image="./hero_image.png" animation_delay={4}/>
         </div>
