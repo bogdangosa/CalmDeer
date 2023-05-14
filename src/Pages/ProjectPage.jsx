@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import ScrollToTop from '../Components/Auxiliary/ScrolltoTop';
 import './ProjectPage.css';
-import {categories_3d} from '../Utils/ProjectPageTree'
+import {categories_3d, categories_2d} from '../Utils/ProjectPageTree'
 import { useEffect, useState } from 'react';
 import ImagePopUp from '../PopUp/ImagePopUp';
 import VideoPopUp from '../PopUp/VideoPopUp';
@@ -39,6 +39,23 @@ function ProjectPage() {
                 setVideos(categories_3d.animation.videos);
                 setImages(categories_3d.animation.images);
                 SetHeroImage(categories_3d.animation.hero);
+                break;
+            
+            case "2D Characters Design":
+                setImages(categories_2d.characters.images);
+                setVideos(categories_2d.characters.videos);
+                SetHeroImage(categories_2d.characters.hero);
+                break;
+
+            case "2D Environment Design":
+                setVideos(categories_2d.enviroments.videos);
+                setImages(categories_2d.enviroments.images);
+                SetHeroImage(categories_2d.enviroments.hero);
+                break;
+            case "Pixel art":
+                setVideos(categories_2d.pixel.videos);
+                setImages(categories_2d.pixel.images);
+                SetHeroImage(categories_2d.pixel.hero);
                 break;
         }
 

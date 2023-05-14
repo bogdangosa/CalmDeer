@@ -186,8 +186,8 @@ function Home() {
                     <SwiperSlide><img src='./3D/Characters/ch1.jpg' className='home-work-image'/></SwiperSlide>
                     <SwiperSlide><img src='./3D/Characters/ch9.jpg' className='home-work-image'/></SwiperSlide>
                     <SwiperSlide><img src='./3D/Characters/ch10.jpg' className='home-work-image'/></SwiperSlide>
-                    <SwiperSlide><img src='./3D/Characters/ch4.png' className='home-work-image'/></SwiperSlide>
-                    <SwiperSlide><img src='./3D/Models/model2.png' className='home-work-image'/></SwiperSlide>
+                    <SwiperSlide><img src='./2D/ENV/env4.png' className='home-work-image'/></SwiperSlide>
+                    <SwiperSlide><img src='./2D/Items/item1.png' className='home-work-image'/></SwiperSlide>
 
                 </Swiper>
               </motion.div>
