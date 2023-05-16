@@ -52,10 +52,15 @@ function ProjectPage() {
                 setImages(categories_2d.enviroments.images);
                 SetHeroImage(categories_2d.enviroments.hero);
                 break;
-            case "Pixel art":
+            case "Pixel Art":
                 setVideos(categories_2d.pixel.videos);
                 setImages(categories_2d.pixel.images);
                 SetHeroImage(categories_2d.pixel.hero);
+                break;
+            case "Item Models":
+                setVideos(categories_2d.items.videos);
+                setImages(categories_2d.items.images);
+                SetHeroImage(categories_2d.items.hero);
                 break;
         }
 

@@ -6,7 +6,7 @@ export const categories_3d = {
     },
     characters:{
         hero: "/3D/Characters/ch11.jpg",
-        videos: ["/3D/Characters/ch1.mp4","/3D/Characters/ch2.mp4"],
+        videos: ["/3D/Characters/ch1.mp4","/3D/Characters/ch2.mp4","/3D/Characters/ch3.mp4"],
         images: ["/3D/Characters/ch1.jpg","/3D/Characters/ch10.jpg","/3D/Characters/ch8.jpg","/3D/Characters/ch6.png","/3D/Characters/ch7.jpg","/3D/Characters/ch2.png","/3D/Characters/ch3.png","/3D/Characters/ch5.png","/3D/Characters/ch9.jpg"],
     },
     models:{
@@ -30,8 +30,8 @@ export const categories_3d = {
 export const categories_2d = {
     characters:{
         hero: "/2D/Characters/ch2.jpg",
-        videos: [],
-        images: ["/2D/Characters/ch1.jpg","/2D/Characters/ch2.jpg","/2D/Characters/ch3.jpg",],
+        videos: ["/2D/Characters/ch1.mp4"],
+        images: ["/2D/Characters/ch1.jpg","/2D/Characters/ch2.jpg","/2D/Characters/ch3.jpg","/2D/Characters/ch4.gif","/2D/Characters/ch5.gif"],
     },
 
     enviroments:{
@@ -41,9 +41,9 @@ export const categories_2d = {
     },
 
     items:{
-        hero: "/2D/ENV/env3.png",
+        hero: "/2D/Items/item1.png",
         videos: [],
-        images: ["/2D/ENV/env1.png","/2D/ENV/env2.jpg","/2D/ENV/env3.png","/2D/ENV/env4.png"],
+        images: ["/2D/Items/item4.jpg","/2D/Items/item2.jpg","/2D/Items/item3.png","/2D/Items/item1.png"],
     },
 
     pixel:{

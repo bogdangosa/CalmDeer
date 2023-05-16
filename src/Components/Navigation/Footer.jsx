@@ -12,7 +12,7 @@ function Footer() {
                 <div className='footer-nav'>
                     <p className='footer-title'>Explore</p>
                     <NavLink to='/' className={({ isActive }) => isActive ? "footer-nav-links-active footer-nav-links" : "footer-nav-links"}><p>Home</p></NavLink>
-                    <NavLink to='/OurWork' className={({ isActive }) => isActive ? "footer-nav-links-active footer-nav-links" : "footer-nav-links"}><p>Our Work</p></NavLink>
+                    <NavLink to='/Portfolio' className={({ isActive }) => isActive ? "footer-nav-links-active footer-nav-links" : "footer-nav-links"}><p>Portfolio</p></NavLink>
                     <NavLink to='/News' className={({ isActive }) => isActive ? "footer-nav-links-active footer-nav-links" : "footer-nav-links"} ><p>News</p></NavLink>
                     <NavLink to='/Contact' className={({ isActive }) => isActive ? "footer-nav-links-active footer-nav-links" : "footer-nav-links"} ><p>Contact</p></NavLink>
                 </div>
