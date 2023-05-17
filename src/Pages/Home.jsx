@@ -113,7 +113,8 @@ function Home() {
               modules={[Autoplay]}>
               <SwiperSlide>
                 <div className='hero-image-overlay'/>
-                <video autoPlay loop muted>
+                <video autoPlay loop muted
+                onLoadedData={()=>console.log("video Loaded")}>
                   <source src='./mayinhara.mp4' type="video/mp4" loop muted></source>
                 </video>
               </SwiperSlide>
@@ -297,10 +298,10 @@ function Home() {
               }}
               onSwiper={(swiper) => console.log(swiper)}
             >
-              <SwiperSlide><img src="./partners_logo/farlands_logo.jpeg"/></SwiperSlide>
+              <SwiperSlide><img src="./partners_logo/farlandslogo.png"/></SwiperSlide>
               <SwiperSlide><img src="./partners_logo/friends_logo.jpeg"/></SwiperSlide>
               <SwiperSlide><img src="./partners_logo/milion_to_one_logo.png"/></SwiperSlide>
-              <SwiperSlide><img src="./partners_logo/tails_logo.jpeg"/></SwiperSlide>
+              <SwiperSlide><img src="./partners_logo/tails_logo.png"/></SwiperSlide>
             </Swiper>
         </div>
 
