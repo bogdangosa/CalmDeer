@@ -240,12 +240,12 @@ function Home() {
               <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. </p> 
               <SimpleButton className="black-btn" onClick={()=>navigate("/Portfolio/2D-Art")}>See More</SimpleButton>
             </div>
-            <img src="./hero_image.png"/>
+            <img src="./2D/Characters/ch1.jpg"/>
 
           </div>
 
           <div className='service-type-container service-type-container-reverse'>
-            <img src="./3D/Characters/ch5.png"/>
+            <img src="./3D/Characters/ch8.jpg"/>
             <div className='service-type-text service-type-text-reverse'>
               <h3>3D Art</h3>
               <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. </p> 
@@ -297,11 +297,10 @@ function Home() {
               }}
               onSwiper={(swiper) => console.log(swiper)}
             >
-              <SwiperSlide className='partner-slide'><img src="./partners_logo/Firemonkeys_Studios_logo.png"/></SwiperSlide>
-              <SwiperSlide><img src="./partners_logo/Blizzard_Entertainment_Logo.png"/></SwiperSlide>
-              <SwiperSlide><img src="./partners_logo/respawn_logo.png"/></SwiperSlide>
-              <SwiperSlide><img src="./partners_logo/naughty_dog_logo.png"/></SwiperSlide>
-              <SwiperSlide><img src="./partners_logo/ea_sports_logo.png"/></SwiperSlide>
+              <SwiperSlide><img src="./partners_logo/farlands_logo.jpeg"/></SwiperSlide>
+              <SwiperSlide><img src="./partners_logo/friends_logo.jpeg"/></SwiperSlide>
+              <SwiperSlide><img src="./partners_logo/milion_to_one_logo.png"/></SwiperSlide>
+              <SwiperSlide><img src="./partners_logo/tails_logo.jpeg"/></SwiperSlide>
             </Swiper>
         </div>
 

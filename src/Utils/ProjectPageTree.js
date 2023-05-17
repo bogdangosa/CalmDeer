@@ -16,8 +16,8 @@ export const categories_3d = {
     },
     enviroments:{
         hero: "/3D/ENV/env1.jpg",
-        videos: ["/3D/ENV/env4.mp4","/3D/ENV/env5.mp4","/3D/ENV/env1.mp4","/3D/ENV/env3.mp4"],
-        images: ["/3D/ENV/env1.jpg","/3D/ENV/env2.jpg"],
+        videos: ["/3D/ENV/env1.mp4","/3D/ENV/env2.mp4"],
+        images: ["/3D/ENV/env1.jpg","/3D/ENV/env2.jpg","/3D/ENV/env3.jpg","/3D/ENV/env4.jpg","/3D/ENV/env5.png","/3D/ENV/env6.png",],
     },
     animation:{
         hero: "/3D/ENV/env1.jpg",
@@ -31,13 +31,13 @@ export const categories_2d = {
     characters:{
         hero: "/2D/Characters/ch2.jpg",
         videos: ["/2D/Characters/ch1.mp4"],
-        images: ["/2D/Characters/ch1.jpg","/2D/Characters/ch2.jpg","/2D/Characters/ch3.jpg","/2D/Characters/ch4.gif","/2D/Characters/ch5.gif"],
+        images: ["/2D/Characters/ch1.jpg","/2D/Characters/ch2.jpg","/2D/Characters/ch3.jpg","/2D/Characters/ch4.gif","/2D/Characters/ch5.gif","/2D/Characters/ch6.png","/2D/Characters/ch7.png"],
     },
 
     enviroments:{
         hero: "/2D/ENV/env3.png",
         videos: [],
-        images: ["/2D/ENV/env1.png","/2D/ENV/env2.jpg","/2D/ENV/env3.png","/2D/ENV/env4.png"],
+        images: ["/2D/ENV/env1.png","/2D/ENV/env2.jpg","/2D/ENV/env3.png","/2D/ENV/env4.png","/2D/ENV/env5.jpg","/2D/ENV/env6.png"],
     },
 
     items:{

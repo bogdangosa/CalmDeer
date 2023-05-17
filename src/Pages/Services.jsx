@@ -17,7 +17,7 @@ function Services() {
       if(serviceid!=null){
         if(serviceid=="2D-Art"){
           setServiceTitle("2D Art");
-          setSubcategoryArray(new Array({title:"2D Characters Design",image:"./image2.png",icon:"../icon_person.svg"},{title:"2D Environment Design",image:"./image5.png",icon:"../icon_landscape.svg"},{title:"Pixel Art",image:"./image5.png",icon:"../icon_person.svg"},{title:"Item Models",image:"./image5.png",icon:"../icon_person.svg"},{title:"UI/UX Design",image:"./image6.png",icon:"../icon_person.svg"},{title:"Slots Games Art",image:"./image1.png",icon:"../icon_person.svg"},{title:"2D Concept Art",image:"./image6.png",icon:"../icon_person.svg"},));
+          setSubcategoryArray(new Array({title:"2D Characters Design",image:"./image2.png",icon:"../icon_person.svg"},{title:"2D Environment Design",image:"./image5.png",icon:"../icon_landscape.svg"},{title:"Pixel Art",image:"./image5.png",icon:"../icon_person.svg"},{title:"Item Models",image:"./image5.png",icon:"../icon_person.svg"},{title:"UI/UX Design",image:"./image6.png",icon:"../icon_person.svg"},{title:"2D Concept Art",image:"./image6.png",icon:"../icon_person.svg"},));
           setServiceImage("/2D/ENV/env4.png")
         }
         else{
