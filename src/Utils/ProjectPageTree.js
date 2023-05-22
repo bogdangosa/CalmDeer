@@ -15,15 +15,25 @@ export const categories_3d = {
         images: ["/3D/Models/model2.png","/3D/Models/model3.png","/3D/Models/model.png",],
     },
     enviroments:{
-        hero: "/3D/ENV/env1.jpg",
+        hero: "/3D/ENV/env7.jpg",
         videos: ["/3D/ENV/env1.mp4","/3D/ENV/env2.mp4"],
-        images: ["/3D/ENV/env1.jpg","/3D/ENV/env2.jpg","/3D/ENV/env3.jpg","/3D/ENV/env4.jpg","/3D/ENV/env5.png","/3D/ENV/env6.png",],
+        images: ["/3D/ENV/env1.jpg","/3D/ENV/env2.jpg","/3D/ENV/env4.jpg","/3D/ENV/env5.png","/3D/ENV/env6.png","/3D/ENV/env7.jpg","/3D/ENV/env8.jpg","/3D/ENV/env9.png","/3D/ENV/env10.jpg","/3D/ENV/env11.jpg",],
+    },
+    rigging:{
+        hero: "/3D/Rigging/rigging1.png",
+        videos: [],
+        images: ["/3D/Rigging/rigging1.png","/3D/Rigging/rigging2.png","/3D/Rigging/rigging3.png"],
+    },
+    level:{
+        hero: "/3D/Level/level2.png",
+        videos: [],
+        images: ["/3D/Level/level1.jpg","/3D/Level/level2.png","/3D/Level/level3.png","/3D/Level/level4.png"],
     },
     animation:{
         hero: "/3D/ENV/env1.jpg",
         videos: ["/3D/Animations/anim1.mp4"],
         images: ["/3D/Animations/anim2.gif"],
-    }
+    },
     
 }
 

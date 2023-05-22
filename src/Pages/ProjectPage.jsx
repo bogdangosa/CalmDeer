@@ -17,7 +17,7 @@ function ProjectPage() {
     useEffect(()=>{
         console.log(projectid);
         switch(projectid){
-            case "3D Visual effects":
+            case "Visual effects":
                 setVideos(categories_3d.vfx.videos);
                 SetHeroImage(categories_3d.vfx.hero);
                 break;
@@ -26,11 +26,16 @@ function ProjectPage() {
                 setVideos(categories_3d.characters.videos);
                 SetHeroImage(categories_3d.characters.hero);
                 break;
-            case "3D Game Modeling":
+            case "Rigging":
+                setImages(categories_3d.rigging.images);
+                setVideos(categories_3d.rigging.videos);
+                SetHeroImage(categories_3d.rigging.hero);
+                break;
+            case "Modelling":
                 setImages(categories_3d.models.images);
                 SetHeroImage(categories_3d.models.hero);
                 break;
-            case "3D Environment Design":
+            case "Environment Assets":
                 setVideos(categories_3d.enviroments.videos);
                 setImages(categories_3d.enviroments.images);
                 SetHeroImage(categories_3d.enviroments.hero);
@@ -71,6 +76,11 @@ function ProjectPage() {
                 setVideos(categories_2d.spine.videos);
                 setImages(categories_2d.spine.images);
                 SetHeroImage(categories_2d.spine.hero);
+                break;
+            case "Level Design":
+                setImages(categories_3d.level.images);
+                setVideos(categories_3d.level.videos);
+                SetHeroImage(categories_3d.level.hero);
                 break;
         }
 

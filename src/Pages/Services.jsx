@@ -65,7 +65,7 @@ function Services() {
           <h2 className='home-subtitle services-subtitle'>{ServiceTitle2}</h2>
           <div className='services-grid-container'>
             {SubcategoryArray.map((subcategory,index)=>{
-              return (<ServiceCard onClick={()=>navigate(`${location.pathname}/${subcategory.title}`)} key={index} icon={subcategory.icon} title={subcategory.title} description={subcategory.description} />)
+              return (<ServiceCard onClick={()=>{if(subcategory.clickable=="true")navigate(`${location.pathname}/${subcategory.title}`)}} key={index} icon={subcategory.icon} title={subcategory.title} description={subcategory.description} />)
             })}
           </div>
         </div>
