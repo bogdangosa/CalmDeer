@@ -22,6 +22,7 @@ function OurWork() {
             <p>Etiam dapibus est quis lacus eleifend volutpat. Fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
             
             <div className='hero-buttons-container-portfolio'>
+                <SimpleButton onClick={()=>navigate("/Portfolio/Concept-Art")}>Concept Art</SimpleButton>
                 <SimpleButton onClick={()=>navigate("/Portfolio/2D-Art")}>2D Art</SimpleButton>
                 <SimpleButton onClick={()=>navigate("/Portfolio/3D-Art")}>3D Art</SimpleButton>
             </div>

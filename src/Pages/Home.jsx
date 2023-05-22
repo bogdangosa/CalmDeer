@@ -89,7 +89,7 @@ function Home() {
           <motion.h1  className='hero-title'               
               initial="out"animate="in"exit="out"
               variants={HeroTitleVariants}
-              transition={HeroTitleTransition}> Lorem ipsum dolor consectetur adipiscing.</motion.h1>
+              transition={HeroTitleTransition}>Discover a World of Uncompromising Quality</motion.h1>
 
           <div className='hero-buttons-container'>
             <SimpleButton onClick={()=>navigate("/Portfolio")}>See Portfolio</SimpleButton>
@@ -202,7 +202,7 @@ function Home() {
                 delay:0.5,
               }}}>
               <h2 className='home-subtitle'>What we do</h2>
-              <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. Mauris viverra tincidunt risus et imperdiet. Pellentesque nec congue ipsum. Aenean pellentesque suscipit enim eu dapibus. Aliquam nec faucibus quam, id lobortis est.</p>
+              <p>At Calmdeer, we are dedicated to crafting game assets and 3D models that exceed your expectations. Our relentless pursuit of excellence ensures that every creation is a testament to our unwavering commitment to quality. Step into a world where attention to detail, precision, and artistic brilliance converge to bring your visions to life.</p>
               <ArrowButton onClick={()=>navigate('/Portfolio')}>Find out more</ArrowButton>
             </motion.div>
         </div>
@@ -235,10 +235,20 @@ function Home() {
         <div className='home-portfolio-section'>
           <h2 className='home-subtitle'>Our Portfolio</h2>
 
+          <div className='service-type-container service-type-container-reverse'>
+            <img src="./3D/Characters/ch8.jpg"/>
+            <div className='service-type-text service-type-text-reverse'>
+              <h3>Concept Art</h3>
+              <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. </p> 
+              <SimpleButton className="black-btn" onClick={()=>navigate("/Portfolio/Concept-Art")}>See More</SimpleButton>
+            </div>
+
+          </div>
+
           <div className='service-type-container'>
             <div className='service-type-text'>
               <h3>2D Art</h3>
-              <p>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. </p> 
+              <p>At Calmdeer Studio, we believe in the transformative power of 2D production. With our unparalleled expertise in 2D Art, we bring your ideas to life with a touch of artistry and a commitment to excellence. Let us take you on a visual journey where imagination knows no bounds and every stroke of creativity sparks wonder.</p> 
               <SimpleButton className="black-btn" onClick={()=>navigate("/Portfolio/2D-Art")}>See More</SimpleButton>
             </div>
             <img src="./2D/Characters/ch1.jpg"/>
@@ -266,8 +276,8 @@ function Home() {
           </div>
           <div className='home-how-we-work-background-overlay'></div>
 
-          <h2 className='how-we-work-title'>How we work</h2>
-          <p className='how-we-work-text'>Etiam dapibus est quis lacus eleifend volutpat. Etiam sed iaculis eros, et suscipit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Quisque non velit quis neque varius sollicitudin sit amet mattis tortor. Duis molestie justo ut tincidunt dapibus. </p>
+          <h2 className='how-we-work-title'>Contact Us Today</h2>
+          <p className='how-we-work-text'>Are you ready to elevate your projects with art that radiates quality? We invite you to reach out to our team today. Explore our portfolio, discuss your project needs, or inquire about our custom creation services. Together, let's bring your visions to life and leave an unforgettable impression through the power of impeccable artistry.</p>
           
           <SimpleButton onClick={()=>navigate('/Contact')}>Work with us</SimpleButton>
 

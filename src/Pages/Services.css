@@ -52,6 +52,15 @@
 }
 
 
+.services-subtitle{
+    width: 100%;
+    text-align: center;
+}
+.services-subtitle::before{
+    display: none;
+}
+
+
 
 @media screen and (max-width: 700px) {
     .hero-services{
