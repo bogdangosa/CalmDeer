@@ -30,8 +30,8 @@ export const categories_3d = {
 export const categories_2d = {
     characters:{
         hero: "/2D/Characters/ch2.jpg",
-        videos: ["/2D/Characters/ch1.mp4"],
-        images: ["/2D/Characters/ch1.jpg","/2D/Characters/ch2.jpg","/2D/Characters/ch3.jpg","/2D/Characters/ch4.gif","/2D/Characters/ch5.gif","/2D/Characters/ch6.png","/2D/Characters/ch7.png"],
+        videos: [],
+        images: ["/2D/Characters/ch1.jpg","/2D/Characters/ch2.jpg","/2D/Characters/ch3.jpg","/2D/Characters/ch6.png","/2D/Characters/ch7.png"],
     },
 
     enviroments:{
@@ -51,4 +51,17 @@ export const categories_2d = {
         videos: [],
         images: ["/2D/Pixel/pixel1.gif","/2D/Pixel/pixel2.gif","/2D/Pixel/pixel3.gif"],
     },
+
+    frame:{
+        hero: "/2D/Pixel/pixel3.gif",
+        videos:["/2D/Characters/ch1.mp4"],
+        images:["/2D/Characters/ch4.gif"]
+    },
+    spine:{
+        hero: "/2D/Pixel/pixel3.gif",
+        videos:[],
+        images:["/2D/Characters/ch5.gif",]
+    },
+
+
 }

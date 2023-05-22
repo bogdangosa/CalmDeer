@@ -62,6 +62,16 @@ function ProjectPage() {
                 setImages(categories_2d.items.images);
                 SetHeroImage(categories_2d.items.hero);
                 break;
+            case "Frame By Frame Animation":
+                setVideos(categories_2d.frame.videos);
+                setImages(categories_2d.frame.images);
+                SetHeroImage(categories_2d.frame.hero);
+                break;
+            case "Spine Animation":
+                setVideos(categories_2d.spine.videos);
+                setImages(categories_2d.spine.images);
+                SetHeroImage(categories_2d.spine.hero);
+                break;
         }
 
     })

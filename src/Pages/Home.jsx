@@ -202,7 +202,7 @@ function Home() {
                 delay:0.5,
               }}}>
               <h2 className='home-subtitle'>What we do</h2>
-              <p>At Calmdeer, we are dedicated to crafting game assets and 3D models that exceed your expectations. Our relentless pursuit of excellence ensures that every creation is a testament to our unwavering commitment to quality. Step into a world where attention to detail, precision, and artistic brilliance converge to bring your visions to life.</p>
+              <p>At Calmdeer, we are dedicated to crafting AAA game assets and 3D models that exceed your expectations. Our relentless pursuit of excellence ensures that every creation is a testament to our unwavering commitment to quality. Step into a world where attention to detail, precision, and artistic brilliance converge to bring your visions to life.</p>
               <ArrowButton onClick={()=>navigate('/Portfolio')}>Find out more</ArrowButton>
             </motion.div>
         </div>
